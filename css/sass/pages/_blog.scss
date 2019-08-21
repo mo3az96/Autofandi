@@ -1,0 +1,114 @@
+.blog {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 0px rgba(22, 22, 22, 0.1);
+    display: flex;
+    margin-bottom: 20px;
+
+    @media (max-width:480px) {
+        flex-direction: column;
+        max-height: none;
+        height: auto;
+    }
+
+    .blog-img {
+        overflow: hidden;
+        display: flex;
+        min-width: 362px;
+
+        @media (max-width:480px) {
+            width: 100%;
+            min-width: auto;
+            height: auto;
+            max-height: none;
+            max-width: none;
+        }
+    }
+
+
+
+    img {
+        width: 100%;
+        @include transition(all 1.2s ease-in-out);
+
+
+        &:hover {
+
+            transform: scale(1.1);
+
+        }
+
+        @media (max-width:767px) {
+            width: 100%;
+            min-width: auto;
+            height: auto;
+            max-height: none;
+            max-width: none;
+        }
+    }
+
+    .info {
+        padding-right: 35px;
+        padding-left: 50px;
+        padding-top: 35px;
+        padding-bottom: 42px;
+
+        @media (max-width:767px) {
+            padding: 20px;
+        }
+    }
+
+    .sub-blog-head {
+        @extend %fixall;
+        color: $seccolor;
+        font-size: 21px;
+        font-family: Frutiger-bold;
+        margin-bottom: 14px;
+        display: block;
+
+        @media (max-width:767px) {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .sub-blog-info {
+        @extend %fixall;
+        color: #7d7d7d;
+        font-size: 16px;
+        text-align: justify;
+
+        @media (max-width:767px) {
+            font-size: 14px;
+        }
+    }
+
+    .readmore {
+        margin-top: 20px;
+
+        a {
+            font-size: 14px;
+            color: #b3b3b3;
+            text-decoration: underline;
+            @include transition(all 0.3s ease-in-out);
+
+            &:hover {
+                color: $maincolor;
+            }
+        }
+    }
+}
+
+html[dir="ltr"] .blog {
+    .sub-blog-head {
+
+        @media (max-width:1199px) {
+            font-size: 20px;
+        }
+    }
+
+    .info {
+        padding-right: 27px;
+        padding-left: 33px;
+    }
+
+}

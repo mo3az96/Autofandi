@@ -1,0 +1,75 @@
+.videos {
+    .owl-dots {
+        margin-top: 0 !important;
+        @extend %fixall;
+
+        .owl-dot {
+            @extend %fixall;
+
+            &.active {
+                span {
+                    background-color: $maincolor;
+                    background: $maincolor;
+                    opacity: 1;
+                }
+            }
+
+            span {
+                @extend %fixall;
+                border-radius: 50%;
+                background-color: $seccolor;
+                background: $seccolor;
+                opacity: 0.502;
+                width: 9px;
+                height: 9px;
+                margin: 0 3px;
+                @include transition(all 0.3s ease-in-out);
+
+                &:hover {
+                    @extend %fixall;
+                    background-color: $maincolor;
+                    background: $maincolor;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.prices {
+    .owl-dots {
+        margin-top: 0 !important;
+        @extend %fixall;
+
+        .owl-dot {
+            @extend %fixall;
+
+            &.active {
+                span {
+                    background-color: $maincolor;
+                    background: $maincolor;
+                    opacity: 1;
+                }
+            }
+
+            span {
+                @extend %fixall;
+                border-radius: 50%;
+                background-color: $seccolor;
+                background: $seccolor;
+                opacity: 0.502;
+                width: 9px;
+                height: 9px;
+                margin: 0 3px;
+                @include transition(all 0.3s ease-in-out);
+
+                &:hover {
+                    @extend %fixall;
+                    background-color: $maincolor;
+                    background: $maincolor;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
