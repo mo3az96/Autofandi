@@ -115,4 +115,9 @@ $(document).ready(function () {
         $(".prices").removeClass("owl-theme");
     }
 
+
+    if ($(".bs3").hasClass("bootstrap")) {
+        console.log("a7a");
+    }
+
 });
