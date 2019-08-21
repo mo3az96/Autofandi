@@ -1,0 +1,58 @@
+.prices {
+    @media (max-width:991px) {
+        margin-bottom: 30px
+    }
+}
+
+.car-price-title {
+    @extend %fixall;
+    font-size: 16px;
+    color: $seccolor;
+    margin-top: 11px;
+    padding-right: 11px;
+    display: block;
+}
+
+.car-price {
+    margin-bottom: 27px;
+}
+
+.car-price-page {
+    margin-top: 35px;
+    margin-bottom: 0;
+
+    .car-price-title {
+        @media (max-width:767px) {
+            font-size: 12px;
+        }
+    }
+
+    .price {
+        font-size: 13px;
+    }
+
+
+}
+
+.price {
+    @extend %fixall;
+    font-size: 17px;
+    color: $maincolor;
+    font-family: Frutiger-bold;
+    margin-top: 6px;
+    padding-right: 11px;
+    display: block;
+}
+
+
+
+
+html[dir="ltr"] .car-price-title {
+    padding-right: 0;
+    padding-left: 11px;
+}
+
+html[dir="ltr"] .price {
+    padding-right: 0;
+    padding-left: 11px;
+}
