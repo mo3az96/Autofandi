@@ -312,95 +312,9 @@ html[dir="ltr"] .new {
         }
     }
 
-    .video-anchor {
-        @extend %fixall;
-
-
-        &:hover {
-
-            .play-video {
-                &:after {
-                    border: 15px solid #fff;
-                    animation: pulse 2s linear infinite 1s;
-                }
-
-                &:before {
-                    border: 15px solid #fff;
-                    animation: pulse 2s linear infinite;
-                }
-            }
-        }
-    }
-
-    .video {
-        margin-bottom: 28px;
-
-    }
-
-    .video-title {
-        @extend %fixall;
-        font-family: Frutiger-bold;
-        font-size: 16px;
-        color: $seccolor;
-        margin-top: 11px;
-        padding-right: 11px;
-        display: block;
-
-        @media (max-width:991px) {
-            text-align: center;
-        }
-
-        @include transition(all 0.3s ease-in-out);
-
-        &:hover {
-            color: $maincolor;
-        }
-    }
-
-    .video-img {
-        position: relative;
-    }
-
-    .play-video {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-
-        &:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 15px solid transparent;
-            border-radius: 100%;
-        }
-
-        &:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 15px solid transparent;
-            border-radius: 100%;
-        }
-
-
-    }
-
-
 }
 
-html[dir="ltr"] .videos-sec {
-    .video-title {
-        padding-right: 0;
-        padding-left: 11px;
-    }
-}
+
 
 .car-prices {
     .prices {
