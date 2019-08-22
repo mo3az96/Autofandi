@@ -28,10 +28,11 @@ $(document).ready(function () {
             $('.search-input').removeClass("search-outer");
             $('.open-search').css("display", "none");
             $('.search-button').css("display", "flex");
+            $('.search-overlay').show();
         }
     });
     if ($(window).width() > 992) {
-        $('body').click(function () {
+        $('.search-overlay').click(function () {
             $('.search-input').removeClass("search-inner");
             $('.search-input').addClass("search-outer");
             $('.open-search').css("display", "flex");

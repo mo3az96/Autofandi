@@ -41,6 +41,7 @@ html[dir="ltr"] .lang {
     align-items: center;
     position: relative;
     overflow: hidden;
+    z-index: 20;
 
     @media (max-width:1199px) {
         width: 70%;
