@@ -116,8 +116,25 @@ $(document).ready(function () {
     }
 
 
-    if ($(".bs3").hasClass("bootstrap")) {
-        console.log("a7a");
+    if ($(window).width() < 992) {
+        $(".search-cats-header").addClass("moaccordion");
+        $(".search-cats").addClass("mopanel");
     }
+    var acc = document.getElementsByClassName("moaccordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+
+
 
 });
