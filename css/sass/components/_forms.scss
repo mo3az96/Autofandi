@@ -165,7 +165,6 @@ html[dir="ltr"] .search-input {
             border-radius: 0px !important;
             outline: none !important;
             box-shadow: none !important;
-            border: none !important;
         }
 
         &:hover {
@@ -202,13 +201,11 @@ html[dir="ltr"] .search-input {
         &:active {
             color: #b3b3b3;
             background-color: #ffffff;
-            border: none;
         }
 
         &:focus {
             color: #b3b3b3;
             background-color: #ffffff;
-            border: none !important;
         }
 
         &:hover {

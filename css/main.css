@@ -580,7 +580,6 @@ html[dir=ltr] .search-input {
   border-radius: 0px !important;
   outline: none !important;
   box-shadow: none !important;
-  border: none !important;
 }
 .select-tags .dropdown-toggle:hover {
   border-radius: 0px !important;
@@ -611,12 +610,10 @@ html[dir=ltr] .search-input {
 .select-tags .dropdown-toggle.btn-default:active {
   color: #b3b3b3;
   background-color: #ffffff;
-  border: none;
 }
 .select-tags .dropdown-toggle.btn-default:focus {
   color: #b3b3b3;
   background-color: #ffffff;
-  border: none !important;
 }
 .select-tags .dropdown-toggle.btn-default:hover {
   color: #b3b3b3;
