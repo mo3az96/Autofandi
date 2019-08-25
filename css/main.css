@@ -597,6 +597,10 @@ html[dir=ltr] .search-input {
   background-color: #ffffff;
   border: none;
   height: 46px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .select-tags .dropdown-toggle.btn-default:after {
   content: "";
@@ -618,6 +622,9 @@ html[dir=ltr] .search-input {
 .select-tags .dropdown-toggle.btn-default:hover {
   color: #b3b3b3;
   background-color: #ffffff;
+}
+.select-tags .open .dropdown-toggle.btn-default {
+  border-color: transparent !important;
 }
 .select-tags .dropdown-menu {
   padding: 0;
