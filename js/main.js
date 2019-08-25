@@ -53,6 +53,38 @@ $(document).ready(function () {
     });
 
     if ($(window).width() < 992) {
+        $(".similar-reviews").addClass("owl-carousel");
+        $(".similar-reviews").addClass("owl-theme");
+        $('.similar-reviews').owlCarousel({
+            items: 1,
+            margin: 15,
+            autoplay: false,
+            autoplayTimeout: 2500,
+            rtl: true,
+            loop: true,
+            nav: false,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1,
+
+                },
+                480: {
+                    items: 2,
+
+                },
+                767: {
+                    items: 2,
+
+                },
+
+            }
+        });
+    } else {
+        $(".similar-reviews").removeClass("owl-carousel");
+        $(".similar-reviews").removeClass("owl-theme");
+    }
+    if ($(window).width() < 992) {
         $(".videos").addClass("owl-carousel");
         $(".videos").addClass("owl-theme");
         $('.videos').owlCarousel({

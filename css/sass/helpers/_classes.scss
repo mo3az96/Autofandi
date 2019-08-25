@@ -240,6 +240,42 @@ html[dir="ltr"] .share {
     }
 }
 
+.tags {
+    margin-top: 35px;
+    display: flex;
+
+    @media (max-width:480px) {
+        margin-top: 20px;
+        justify-content: center;
+    }
+}
+
+.tag {
+    @extend %fixall;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 14px;
+    display: inline-flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 4px;
+    backface-visibility: hidden;
+    @include transition(all 0.3s ease-in-out);
+
+    &:nth-of-type(1) {
+        background-color: #efa81f;
+    }
+
+    &:nth-of-type(2) {
+        background-color: #8a8a8a;
+    }
+
+    &:nth-of-type(3) {
+        background-color: #bebfbe;
+    }
+}
+
 @keyframes inscreen {
     0% {
         right: -100%;
