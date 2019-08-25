@@ -1,0 +1,238 @@
+.news-post-header {
+    margin-bottom: 21px;
+}
+
+.news {
+    @media (max-width:991px) {
+        margin-bottom: 30px
+    }
+}
+
+.similar-new-title {
+    @extend %fixall;
+    font-family: Frutiger-bold;
+    font-size: 16px;
+    color: $seccolor;
+    margin-top: 11px;
+    padding-right: 11px;
+    display: block;
+
+    @media (max-width:991px) {
+        text-align: center;
+    }
+
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover {
+        color: $maincolor;
+    }
+}
+
+html[dir="ltr"] .similar-new-title {
+    padding-right: 0;
+    padding-left: 11px;
+}
+
+.similar-new {
+    margin-bottom: 27px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.comments {
+    margin-top: 53px;
+    border-top: 2px solid #ededed;
+    border-bottom: 2px solid #ededed;
+    padding-top: 5px;
+    padding-bottom: 17px;
+
+    .comment {
+        margin-top: 24px;
+        border-bottom: 1px solid #ededed;
+        padding-bottom: 24px;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .comment-info {
+        display: flex;
+        align-items: center;
+    }
+
+    .reply {
+        width: 100%;
+        background-color: #fafafa;
+        padding: 18px 28px 29px;
+        margin-top: 27px;
+    }
+
+    .user-img {
+        border-radius: 27px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px 0px rgba(#000, 0.1);
+        width: 55px;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .user-info {
+        margin: 0 22px;
+    }
+
+    .user-name {
+        @extend %fixall;
+        font-size: 15px;
+        font-family: Frutiger-bold;
+
+        &.comment-name {
+            color: $maincolor;
+        }
+
+        &.reply-name {
+            color: $seccolor;
+        }
+    }
+
+    .comment-time {
+        @extend %fixall;
+        color: #a7a7a7;
+        font-size: 13px;
+    }
+
+    .comment-text {
+        @extend %fixall;
+        margin-top: 12px;
+        color: #6e6e6e;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .add-reply {
+        font-size: 15px;
+        font-family: Frutiger-bold;
+        color: $maincolor;
+        text-decoration: underline;
+        display: inline-block;
+        margin-top: 10px;
+        cursor: pointer;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $seccolor;
+        }
+    }
+}
+
+.add-comment {
+    margin-top: 27px;
+
+    @media (max-width:992px) {
+        margin-bottom: 75px;
+    }
+
+    .comment-add-head {
+        @extend %fixall;
+        color: $seccolor;
+        font-size: 18px;
+        font-family: Frutiger-bold;
+        margin-bottom: 7px;
+    }
+
+    .form-hint {
+        @extend %fixall;
+        font-size: 15px;
+        color: $maincolor;
+        display: inline-block;
+
+        .important-hint {
+            @media (max-width:480px) {
+                display: block;
+            }
+        }
+    }
+
+    .add-form {
+        margin-top: 17px;
+    }
+
+    label {
+        display: block;
+        @extend %fixall;
+        color: $seccolor;
+        font-size: 16px;
+        font-weight: normal;
+        margin: 12px 0 9px;
+        padding: 0 15px;
+
+        .important {
+            &:after {
+                content: "*";
+                font-size: 16px;
+                color: #ed2228;
+            }
+        }
+    }
+
+    input {
+        @extend %fixall;
+        width: 100%;
+        border: 2px solid #f2f2f2 !important;
+        height: 60px;
+        padding: 0 28px;
+        color: #a9a9a9;
+        font-size: 16px;
+        @include transition(all 0.3s ease-in-out);
+
+        &:focus {
+            border: 2px solid $maincolor !important;
+        }
+    }
+
+    textarea {
+        @extend %fixall;
+        border: 2px solid #f2f2f2 !important;
+        height: 109px;
+        width: 100%;
+        resize: none;
+        padding: 15px 28px;
+        color: #a9a9a9;
+        font-size: 16px;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(#a9a9a9, 0.7) rgba($maincolor, 0.2);
+        @include transition(all 0.3s ease-in-out);
+
+        &::-webkit-scrollbar {
+            background-color: rgba($maincolor, 0.5);
+            width: 8px;
+
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(#a9a9a9, 1);
+            border-radius: 25px;
+
+            &:hover {
+                background-color: rgba(#a9a9a9, 1);
+            }
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: rgba($maincolor, 0.5);
+        }
+
+        &:focus {
+            border: 2px solid $maincolor !important;
+        }
+    }
+
+    .add-comment-btn {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+}

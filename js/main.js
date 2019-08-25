@@ -85,6 +85,38 @@ $(document).ready(function () {
         $(".videos").removeClass("owl-theme");
     }
     if ($(window).width() < 992) {
+        $(".similar-news").addClass("owl-carousel");
+        $(".similar-news").addClass("owl-theme");
+        $('.similar-news').owlCarousel({
+            items: 1,
+            margin: 15,
+            autoplay: false,
+            autoplayTimeout: 2500,
+            rtl: true,
+            loop: true,
+            nav: false,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1,
+
+                },
+                480: {
+                    items: 2,
+
+                },
+                767: {
+                    items: 2,
+
+                },
+
+            }
+        });
+    } else {
+        $(".similar-news").removeClass("owl-carousel");
+        $(".similar-news").removeClass("owl-theme");
+    }
+    if ($(window).width() < 992) {
         $(".prices").addClass("owl-carousel");
         $(".prices").addClass("owl-theme");
         $('.prices').owlCarousel({
@@ -146,7 +178,7 @@ $(document).ready(function () {
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
-        loop: true
+        loop: false
 
     });
     var galleryTop = new Swiper('.gallery-top', {
