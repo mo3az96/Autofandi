@@ -580,8 +580,14 @@ html[dir=ltr] .search-input {
   border-radius: 0px !important;
   outline: none !important;
   box-shadow: none !important;
+  border: none !important;
 }
 .select-tags .dropdown-toggle:hover {
+  border-radius: 0px !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.select-tags .dropdown-toggle:visited {
   border-radius: 0px !important;
   outline: none !important;
   box-shadow: none !important;
@@ -610,12 +616,11 @@ html[dir=ltr] .search-input {
 .select-tags .dropdown-toggle.btn-default:focus {
   color: #b3b3b3;
   background-color: #ffffff;
-  border: none;
+  border: none !important;
 }
 .select-tags .dropdown-toggle.btn-default:hover {
   color: #b3b3b3;
   background-color: #ffffff;
-  border: none;
 }
 .select-tags .dropdown-menu {
   padding: 0;
@@ -781,7 +786,13 @@ html[dir=ltr] .adv-search-button i {
   background-repeat: no-repeat;
   background-position: right;
   background-color: #000;
+  margin-top: 144px;
   min-height: 199px;
+}
+@media (max-width: 767px) {
+  .advanced-search {
+    margin-top: 0;
+  }
 }
 @media (max-width: 991px) {
   .advanced-search {
@@ -1614,6 +1625,17 @@ html[dir=ltr] .search-cats li a:before {
 
 .header {
   box-shadow: 0px 0px 10px 0px rgba(22, 22, 22, 0.1);
+  background-color: #fff;
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .header {
+    position: relative;
+  }
 }
 
 .lang {
@@ -1815,9 +1837,9 @@ html[dir=ltr] .menu-btn {
 
 .breadcrumb {
   background-color: transparent;
-  margin-top: 35px;
+  margin-top: 175px;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .breadcrumb {
     margin-top: 35px;
   }
