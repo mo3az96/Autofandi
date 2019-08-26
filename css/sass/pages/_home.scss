@@ -296,6 +296,10 @@ html[dir="ltr"] .new {
     .info {
         padding-right: 27px;
         padding-left: 33px;
+
+        @media (max-width:767px) {
+            padding: 20px;
+        }
     }
 
     .tag {

@@ -697,7 +697,7 @@ html[dir="ltr"] .newsletter-sec {
     height: 100%;
     position: fixed;
     justify-content: center;
-    background-color: rgba($seccolor, 0.95);
+    background-color: rgba(#fff, 1);
     z-index: 9999;
     left: 0;
     top: 0;
@@ -794,7 +794,8 @@ html[dir="ltr"] .newsletter-sec {
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #c0c0c0;
+        color: #000;
+        opacity: 0.3;
         font-size: 20px;
     }
 }

@@ -77,10 +77,10 @@ html[dir="ltr"] .flex-fix {
 }
 
 .Sec-bar {
-    box-shadow: 0px 10px 10px 0px rgba(22, 22, 22, 0.1);
-    -webkit-box-shadow: 0px 10px 10px 0px rgba(22, 22, 22, 0.1);
-    -moz-box-shadow: 0px 10px 10px 0px rgba(22, 22, 22, 0.1);
-    // box-shadow: 0px 0px 10px 0px rgba(22, 22, 22, 0.1);
+    // box-shadow: 0px 10px 10px 0px rgba(22, 22, 22, 0.1);
+    // -webkit-box-shadow: 0px 10px 10px 0px rgba(22, 22, 22, 0.1);
+    // -moz-box-shadow: 0px 10px 10px 0px rgba(22, 22, 22, 0.1);
+
     background-color: #fff;
     @include transition(all 0.1s);
     position: fixed;
@@ -97,7 +97,7 @@ html[dir="ltr"] .flex-fix {
 }
 
 .fixed-top {
-
+    box-shadow: 0px 0px 10px 0px rgba(22, 22, 22, 0.1);
     top: 0;
 
     @media (max-width:991px) {
@@ -203,7 +203,7 @@ html[dir="ltr"] .flex-fix {
     color: #fff;
     font-size: 15px;
     color: #fff;
-    margin-right: 20px;
+    margin-right: 10px;
 
     @media (max-width:991px) {
         display: flex;
