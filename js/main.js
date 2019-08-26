@@ -1,3 +1,10 @@
+window.onload = function () {
+
+    $(".loader").fadeOut(1000, function () {
+        $(this).parent().hide();
+    });
+
+}
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() >= 30) {
@@ -27,6 +34,7 @@ $(document).ready(function () {
             $('body').css("overflow", "hidden");
             $('html').css("overflow", "hidden");
         } else {
+            $('.search-input').show();
             $('.search-input').addClass("search-inner");
             $('.search-input').removeClass("search-outer");
             $('.open-search').css("display", "none");
@@ -36,6 +44,7 @@ $(document).ready(function () {
     });
     if ($(window).width() > 992) {
         $('.search-overlay').click(function () {
+            $('.search-input').fadeOut(500);
             $('.search-input').removeClass("search-inner");
             $('.search-input').addClass("search-outer");
             $('.open-search').css("display", "flex");

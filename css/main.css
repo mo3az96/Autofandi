@@ -376,6 +376,7 @@ html[dir=ltr] .outscreen {
 }
 body {
   font-family: Frutiger;
+  overflow: hidden;
 }
 body::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0.2);
@@ -417,6 +418,56 @@ html {
   display: none;
 }
 
+.load-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 999999;
+}
+
+.loader {
+  height: 4px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.loader:before {
+  display: block;
+  position: absolute;
+  content: "";
+  left: -200px;
+  width: 200px;
+  height: 4px;
+  background-color: #ed2228;
+  animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+  from {
+    left: -200px;
+    width: 30%;
+  }
+  50% {
+    width: 30%;
+  }
+  70% {
+    width: 70%;
+  }
+  80% {
+    left: 50%;
+  }
+  95% {
+    left: 120%;
+  }
+  to {
+    left: 100%;
+  }
+}
 @font-face {
   font-family: "Frutiger";
   src: url("../fonts/frutiger/FrutigerLTArabic-55Roman.ttf");
@@ -509,6 +560,7 @@ html[dir=ltr] .search-outer {
   padding: 0 28px;
   color: #a9a9a9;
   font-size: 16px;
+  display: none;
 }
 .search-input::placeholder {
   color: #a9a9a9;
@@ -537,6 +589,7 @@ html[dir=ltr] .search-outer {
 @media (max-width: 767px) {
   .search-input {
     width: 100% !important;
+    display: flex;
   }
 }
 
@@ -792,7 +845,6 @@ html[dir=ltr] .select-tags .dropdown-toggle.btn-default:after {
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  border: 1px solid transparent;
 }
 .adv-search-button:before {
   content: "";
@@ -802,7 +854,7 @@ html[dir=ltr] .select-tags .dropdown-toggle.btn-default:after {
   bottom: 0;
   left: 0;
   right: 0;
-  background: black;
+  background: rgba(255, 0, 0, 0.8);
   -webkit-transform: scaleX(0);
   /* scaley to vertical */
   transform: scaleX(0);
@@ -815,9 +867,6 @@ html[dir=ltr] .select-tags .dropdown-toggle.btn-default:after {
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
-}
-.adv-search-button:hover {
-  border: 1px solid #ed2228;
 }
 .adv-search-button:hover:before {
   -webkit-transform: scaleX(1);
@@ -1954,7 +2003,7 @@ html[dir=ltr] .menu-btn {
 
 .breadcrumb {
   background-color: transparent;
-  margin-top: 165px;
+  margin-top: 160px;
 }
 .breadcrumb .container {
   display: flex;

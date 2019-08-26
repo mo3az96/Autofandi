@@ -71,6 +71,7 @@ html[dir="ltr"] .search-outer {
 }
 
 .search-input {
+
     position: absolute;
     left: -100%;
     @extend %fixall;
@@ -85,6 +86,7 @@ html[dir="ltr"] .search-outer {
     padding: 0 28px;
     color: #a9a9a9;
     font-size: 16px;
+    display: none;
 
     &::placeholder {
         color: #a9a9a9;
@@ -115,6 +117,7 @@ html[dir="ltr"] .search-outer {
 
     @media (max-width:767px) {
         width: 100% !important;
+        display: flex;
     }
 }
 
@@ -406,7 +409,6 @@ html[dir="ltr"] .select-tags {
     transition-property: color;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    border: 1px solid transparent;
 
     &:before {
         content: "";
@@ -416,7 +418,7 @@ html[dir="ltr"] .select-tags {
         bottom: 0;
         left: 0;
         right: 0;
-        background: rgba(#000, 1);
+        background: rgba(#f00, 0.8);
         -webkit-transform: scaleX(0);
         /* scaley to vertical */
         transform: scaleX(0);
@@ -432,7 +434,6 @@ html[dir="ltr"] .select-tags {
     }
 
     &:hover {
-        border: 1px solid $maincolor;
 
         &:before {
             -webkit-transform: scaleX(1);
