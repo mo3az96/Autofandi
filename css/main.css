@@ -843,6 +843,13 @@ html[dir=ltr] .adv-search-button i {
 
 .advanced-search {
   background-color: #000;
+  margin-top: 130px;
+}
+@media (max-width: 767px) {
+  .advanced-search {
+    margin-top: 102px;
+    padding-top: 0 !important;
+  }
 }
 .advanced-search .adv-search {
   background-image: url(../images/advsearch-ar.jpg);
@@ -1797,20 +1804,31 @@ html[dir=ltr] .flex-fix {
   -webkit-box-shadow: 0px 10px 10px 0px rgba(22, 22, 22, 0.1);
   -moz-box-shadow: 0px 10px 10px 0px rgba(22, 22, 22, 0.1);
   background-color: #fff;
-  top: -100%;
-}
-
-.fixed-top {
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
   position: fixed;
   z-index: 9;
   left: 0;
-  top: 0;
+  top: 30px;
   width: 100%;
   padding-top: 14px;
+}
+@media (max-width: 991px) {
+  .Sec-bar {
+    padding-top: 25px;
+    top: 0;
+  }
+}
+
+.fixed-top {
+  top: 0;
+}
+@media (max-width: 991px) {
+  .fixed-top {
+    padding-top: 10px;
+  }
 }
 
 .sec-bar {
@@ -1821,7 +1839,7 @@ html[dir=ltr] .flex-fix {
 }
 @media (max-width: 991px) {
   .sec-bar {
-    margin-top: 25px;
+    margin-top: 0;
   }
 }
 .sec-bar .navbar-sec {
@@ -1934,11 +1952,11 @@ html[dir=ltr] .menu-btn {
 
 .breadcrumb {
   background-color: transparent;
-  margin-top: 35px;
+  margin-top: 165px;
 }
 @media (max-width: 767px) {
   .breadcrumb {
-    margin-top: 35px;
+    margin-top: 137px;
   }
 }
 .breadcrumb a {
@@ -2114,6 +2132,11 @@ html[dir=ltr] .main-new .overlay {
 @media (max-width: 1199px) {
   html[dir=ltr] .main-new .overlay {
     padding: 35px 26px 30px 21px;
+  }
+}
+@media (max-width: 767px) {
+  html[dir=ltr] .main-new .overlay .info {
+    left: 0;
   }
 }
 

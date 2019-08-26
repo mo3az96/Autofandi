@@ -1,11 +1,11 @@
 $(document).ready(function () {
-    // $(window).scroll(function () {
-    //     if ($(this).scrollTop() >= 100) {
-    //         $('.Sec-bar').addClass("fixed-top");
-    //     } else {
-    //         $('.Sec-bar').removeClass("fixed-top");
-    //     }
-    // });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >= 30) {
+            $('.Sec-bar').addClass("fixed-top");
+        } else {
+            $('.Sec-bar').removeClass("fixed-top");
+        }
+    });
     // Mobile Side Menu 
     $('.menu-btn').click(function () {
         $('.xs-nav').show();

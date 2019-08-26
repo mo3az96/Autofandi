@@ -465,6 +465,12 @@ html[dir="ltr"] .adv-search-button {
 
 .advanced-search {
     background-color: $seccolor;
+    margin-top: 130px;
+
+    @media (max-width:767px) {
+        margin-top: 102px;
+        padding-top: 0 !important;
+    }
 
     .adv-search {
         background-image: url(../images/advsearch-ar.jpg);
