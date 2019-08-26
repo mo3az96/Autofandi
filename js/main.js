@@ -42,9 +42,17 @@ $(document).ready(function () {
             $('.search-button').css("display", "none");
             $('.search-overlay').hide();
         });
+        $('.header').click(function () {
+            $('.search-input').removeClass("search-inner");
+            $('.search-input').addClass("search-outer");
+            $('.open-search').css("display", "flex");
+            $('.search-button').css("display", "none");
+            $('.search-overlay').hide();
+        });
         $(".flex-fix").click(function (e) {
             e.stopPropagation();
         });
+
     }
     $('.search-pop').click(function () {
         $('.search-pop').slideUp(500);
