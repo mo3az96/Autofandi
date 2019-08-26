@@ -413,7 +413,7 @@ html {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0);
-  z-index: 9;
+  z-index: 10;
   display: none;
 }
 
@@ -1763,7 +1763,7 @@ html[dir=ltr] .lang img {
   align-items: center;
   position: relative;
   overflow: hidden;
-  z-index: 21;
+  z-index: 20;
 }
 @media (max-width: 1199px) {
   .flex-fix {
