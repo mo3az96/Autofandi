@@ -86,7 +86,7 @@ html[dir="ltr"] .car-name {
         bottom: 0;
         left: 0;
         right: 0;
-        background: rgba(#f00, 0.4);
+        background: rgba(#000, 1);
         -webkit-transform: scaleX(0);
         /* scaley to vertical */
         transform: scaleX(0);
@@ -246,7 +246,6 @@ html[dir="ltr"] .share {
 
     @media (max-width:480px) {
         margin-top: 20px;
-        justify-content: center;
     }
 }
 
@@ -279,38 +278,46 @@ html[dir="ltr"] .share {
 @keyframes inscreen {
     0% {
         right: -100%;
+        top: -100%;
     }
 
     100% {
         right: 0;
+        top: 0;
     }
 }
 
 @keyframes inscreen-en {
     0% {
         left: -100%;
+        top: -100%;
     }
 
     100% {
         left: 0;
+        top: 0;
     }
 }
 
 .inscreen {
-    animation: inscreen 0.4s ease forwards;
+    animation: inscreen 0.7s ease forwards;
 }
 
 html[dir="ltr"] .inscreen {
-    animation: inscreen-en 0.4s ease forwards;
+    animation: inscreen-en 0.7s ease forwards;
 }
 
 @keyframes outscreen {
     0% {
-        right: 0;
+        right: auto;
+        left: 0;
+        top: 0;
     }
 
     100% {
-        right: -100%;
+        right: auto;
+        top: -100%;
+        left: -100%;
     }
 }
 
@@ -320,11 +327,15 @@ html[dir="ltr"] .inscreen {
 
 @keyframes outscreen-en {
     0% {
-        left: 0;
+        right: 0;
+        left: auto;
+        top: 0;
     }
 
     100% {
-        left: -100%;
+        right: -100%;
+        top: -100%;
+        left: auto
     }
 }
 

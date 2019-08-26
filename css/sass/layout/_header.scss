@@ -1,11 +1,5 @@
 .header {
-    box-shadow: 0px 0px 10px 0px rgba(22, 22, 22, 0.1);
-    background-color: #fff;
-    position: fixed;
-    z-index: 9;
-    left: 0;
-    top: 0;
-    width: 100%;
+
 
     @media (max-width:767px) {
         position: relative;
@@ -51,7 +45,7 @@ html[dir="ltr"] .lang {
     align-items: center;
     position: relative;
     overflow: hidden;
-    z-index: 20;
+    z-index: 21;
 
     @media (max-width:1199px) {
         width: 70%;
@@ -64,7 +58,7 @@ html[dir="ltr"] .lang {
     }
 
     @media (max-width:767px) {
-        margin-top: 15px;
+        z-index: 0;
     }
 }
 
@@ -80,10 +74,26 @@ html[dir="ltr"] .flex-fix {
         width: auto;
         justify-content: flex-start;
     }
+}
 
-    @media (max-width:767px) {
-        margin-top: 15px;
-    }
+.Sec-bar {
+    box-shadow: 0px 10px 10px 0px rgba(22, 22, 22, 0.1);
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(22, 22, 22, 0.1);
+    -moz-box-shadow: 0px 10px 10px 0px rgba(22, 22, 22, 0.1);
+    // box-shadow: 0px 0px 10px 0px rgba(22, 22, 22, 0.1);
+    background-color: #fff;
+
+    top: -100%;
+}
+
+.fixed-top {
+    @include transition(all 0.3s ease-in-out);
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 14px;
 }
 
 .sec-bar {
@@ -96,10 +106,6 @@ html[dir="ltr"] .flex-fix {
         margin-top: 25px
     }
 
-    @media (max-width:767px) {
-        flex-direction: column;
-    }
-
     .navbar-sec {
         display: flex;
         align-items: center;
@@ -110,6 +116,13 @@ html[dir="ltr"] .flex-fix {
 
         @media (max-width:991px) {
             display: none;
+        }
+
+    }
+
+    .logo {
+        @media (max-width:767px) {
+            flex-basis: 50%;
         }
     }
 
@@ -139,7 +152,7 @@ html[dir="ltr"] .flex-fix {
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(#f00, 0.4);
+            background: rgba(#000, 1);
             -webkit-transform: scale(0);
             -ms-transform: scale(0);
             transform: scale(0);
@@ -168,7 +181,7 @@ html[dir="ltr"] .flex-fix {
 
 
 .menu-btn {
-
+    z-index: 9999999999999;
     @extend %fixall;
     cursor: pointer;
     background-color: $seccolor;

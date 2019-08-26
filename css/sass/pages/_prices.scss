@@ -11,6 +11,11 @@
     margin-top: 11px;
     padding-right: 11px;
     display: block;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover {
+        color: $maincolor;
+    }
 }
 
 .car-price {
@@ -29,10 +34,6 @@
         @media (max-width:767px) {
             font-size: 12px;
         }
-    }
-
-    .price {
-        font-size: 13px;
     }
 
 

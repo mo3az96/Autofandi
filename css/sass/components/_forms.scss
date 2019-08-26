@@ -7,40 +7,75 @@
 
 @keyframes search-inner {
     0% {
-        top: -100%;
+        left: -100%;
 
     }
 
     100% {
-        top: 0;
+        left: 60px;
+    }
+}
+
+@keyframes search-inner-en {
+    0% {
+        right: -100%;
+        left: auto
+    }
+
+    100% {
+        right: 60px;
+        left: auto
     }
 }
 
 .search-inner {
-    animation: search-inner 0.5s ease forwards;
+    animation: search-inner 1s ease forwards;
+
+}
+
+html[dir="ltr"] .search-inner {
+    animation: search-inner-en 1s ease forwards;
 
 }
 
 @keyframes search-outer {
     0% {
-        top: 0;
+        left: 60px;
     }
 
     100% {
-        top: -100%;
+        left: -100%;
     }
 }
 
+@keyframes search-outer-en {
+    0% {
+        right: 60px;
+        left: auto;
+    }
+
+    100% {
+        right: -100%;
+        left: auto;
+    }
+}
+
+html[dir="ltr"] .search-outer {
+    animation: search-outer-en 1s ease forwards;
+
+}
+
 .search-outer {
-    animation: search-outer 0.5s ease forwards;
+    animation: search-outer 1s ease forwards;
 
 }
 
 .search-input {
+    position: absolute;
+    left: -100%;
     @extend %fixall;
     position: absolute;
-    right: 0;
-    top: -100%;
+    top: 0;
     height: 52px;
     width: 694px;
     border-style: solid;
@@ -84,8 +119,8 @@
 }
 
 html[dir="ltr"] .search-input {
-    right: auto;
-    left: 0;
+    right: -100%;
+    left: auto;
 
     @media (max-width:1199px) {
         width: 500px;
@@ -111,13 +146,7 @@ html[dir="ltr"] .search-input {
     }
 }
 
-.pages-search {
-    margin-top: 32px;
 
-    .dropdown-toggle.btn-default {
-        border: 2px solid #f2f2f2 !important;
-    }
-}
 
 .select-tags {
     margin-left: 8px;
@@ -126,6 +155,11 @@ html[dir="ltr"] .search-input {
     @media (max-width:991px) {
         margin-left: 0;
         margin-bottom: 4px;
+    }
+
+    .filter-option {
+        display: flex;
+        align-items: center;
     }
 
     .bootstrap-select {
@@ -333,10 +367,30 @@ html[dir="ltr"] .select-tags {
     }
 }
 
+.pages-search {
+    margin-top: 32px;
+
+    .open {
+        .dropdown-toggle.btn-default {
+            border-color: transparent !important;
+            box-shadow: 0px 0px 20px 0px rgba(22, 22, 22, 0.1) !important;
+        }
+    }
+
+    .dropdown-toggle.btn-default {
+        border: 2px solid #f2f2f2 !important;
+    }
+
+    .dropdown-menu.open {
+        box-shadow: 0px 11px 13px 0px rgba(22, 22, 22, 0.1) !important;
+    }
+}
+
 .adv-search-button {
     @extend %fixall;
     background-color: $maincolor;
     height: 46px;
+    line-height: 46px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -352,6 +406,7 @@ html[dir="ltr"] .select-tags {
     transition-property: color;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
+    border: 1px solid transparent;
 
     &:before {
         content: "";
@@ -361,7 +416,7 @@ html[dir="ltr"] .select-tags {
         bottom: 0;
         left: 0;
         right: 0;
-        background: rgba(#fff, 0.1);
+        background: rgba(#000, 1);
         -webkit-transform: scaleX(0);
         /* scaley to vertical */
         transform: scaleX(0);
@@ -377,6 +432,8 @@ html[dir="ltr"] .select-tags {
     }
 
     &:hover {
+        border: 1px solid $maincolor;
+
         &:before {
             -webkit-transform: scaleX(1);
             transform: scaleX(1);
@@ -407,17 +464,41 @@ html[dir="ltr"] .adv-search-button {
 }
 
 .advanced-search {
+    background-color: $seccolor;
+
+    .adv-search {
+        background-image: url(../images/advsearch-ar.jpg);
+        background-repeat: no-repeat;
+        padding-bottom: 60px;
+        padding-top: 46px;
+
+        @media (max-width:767px) {
+            margin-top: 0;
+        }
+
+        @media (max-width:991px) {
+            background-image: none;
+            padding-bottom: 52px;
+        }
+
+        @media (max-width:767px) {
+            padding-bottom: 30px;
+        }
+    }
+}
+
+html[dir="ltr"] .advanced-search {
+
+
     background-image: url(../images/advsearch-en.jpg);
     background-repeat: no-repeat;
+    padding-bottom: 60px;
+    padding-top: 46px;
     background-position: right;
-    background-color: $seccolor;
-    margin-top: 144px;
 
     @media (max-width:767px) {
         margin-top: 0;
     }
-
-    min-height: 199px;
 
     @media (max-width:991px) {
         background-image: none;
