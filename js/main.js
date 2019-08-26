@@ -2,6 +2,7 @@ window.onload = function () {
 
     $(".loader").fadeOut(1000, function () {
         $(this).parent().hide();
+        $('body').css("overflow", "auto");
     });
 
 }
