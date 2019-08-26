@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.footer-sec .coprights p, .similar-reviews .car-review-title, .add-comment textarea, .add-comment input, .add-comment label, .add-comment .form-hint, .add-comment .comment-add-head, .comments .comment-text, .comments .comment-time, .comments .user-name, .similar-new-title, .video-title, .video-anchor, .price, .car-price-title, .review .tag, .review .review-info, .review .review-head, .blog .sub-blog-info, .blog .sub-blog-head, .car-prices .price, .car-prices .car-price-title, .new .tag, .new .sub-new-info, .new .sub-new-head, .main-new .main-new-info, .main-new .main-new-head, .advanced-search-head > p, .advanced-search-head, .breadcrumb .show-mobile, .breadcrumb a, .breadcrumb, .menu-btn, .sec-bar .search-btn, .lang, .review-post li a, .review-post li.active a:hover, .review-post li.active a, .search-cats li a, .search-cats li.active a:hover, .search-cats li.active a, .search-cats, .car-slider .swiper-button-prev, .car-slider .swiper-button-next, .prices .owl-dots .owl-dot span:hover, .prices .owl-dots .owl-dot span, .prices .owl-dots .owl-dot, .prices .owl-dots, .similar-news .owl-dots .owl-dot span:hover, .similar-news .owl-dots .owl-dot span, .similar-news .owl-dots .owl-dot, .similar-news .owl-dots, .similar-reviews .owl-dots .owl-dot span:hover, .similar-reviews .owl-dots .owl-dot span, .similar-reviews .owl-dots .owl-dot, .similar-reviews .owl-dots, .videos .owl-dots .owl-dot span:hover, .videos .owl-dots .owl-dot span, .videos .owl-dots .owl-dot, .videos .owl-dots, .nav-links .navlink, .nav-links, .search-pop .search-btn, .search-pop .search-input, .newsletter-sec .news-btn, .newsletter-sec .news-input, .newsletter-sec .newsletter-info, .newsletter-sec .newsletter-head, .adv-search-button, .search-input, .tag, .share .socila-link, .share .share-with, .car-info, .see-more-btns, .car-name, .sec-head {
+.footer-sec .coprights p, .similar-reviews .car-review-title, .add-comment textarea, .add-comment input, .add-comment label, .add-comment .form-hint, .add-comment .comment-add-head, .comments .comment-text, .comments .comment-time, .comments .user-name, .similar-new-title, .video-title, .video-anchor, .price, .car-price-title, .review .tag, .review .review-info, .review .review-head, .blog .sub-blog-info, .blog .sub-blog-head, .car-prices .price, .car-prices .car-price-title, .new .tag, .new .sub-new-info, .new .sub-new-head, .main-new .main-new-info, .main-new .main-new-head, .advanced-search-head > p, .advanced-search-head, .breadcrumb a, .breadcrumb, .menu-btn, .sec-bar .search-btn, .lang, .review-post li a, .review-post li.active a:hover, .review-post li.active a, .search-cats li a, .search-cats li.active a:hover, .search-cats li.active a, .search-cats, .car-slider .swiper-button-prev, .car-slider .swiper-button-next, .prices .owl-dots .owl-dot span:hover, .prices .owl-dots .owl-dot span, .prices .owl-dots .owl-dot, .prices .owl-dots, .similar-news .owl-dots .owl-dot span:hover, .similar-news .owl-dots .owl-dot span, .similar-news .owl-dots .owl-dot, .similar-news .owl-dots, .similar-reviews .owl-dots .owl-dot span:hover, .similar-reviews .owl-dots .owl-dot span, .similar-reviews .owl-dots .owl-dot, .similar-reviews .owl-dots, .videos .owl-dots .owl-dot span:hover, .videos .owl-dots .owl-dot span, .videos .owl-dots .owl-dot, .videos .owl-dots, .nav-links .navlink, .nav-links, .search-pop .search-btn, .search-pop .search-input, .newsletter-sec .news-btn, .newsletter-sec .news-input, .newsletter-sec .newsletter-info, .newsletter-sec .newsletter-head, .adv-search-button, .search-input, .tag, .share .socila-link, .share .share-with, .car-info, .see-more-btns, .car-name, .sec-head {
   text-decoration: none;
   outline: none;
   box-shadow: none;
@@ -7,19 +7,19 @@
   margin: 0;
   padding: 0;
 }
-.footer-sec .coprights p:hover, .similar-reviews .car-review-title:hover, .add-comment textarea:hover, .add-comment input:hover, .add-comment label:hover, .add-comment .form-hint:hover, .add-comment .comment-add-head:hover, .comments .comment-text:hover, .comments .comment-time:hover, .comments .user-name:hover, .similar-new-title:hover, .video-title:hover, .video-anchor:hover, .price:hover, .car-price-title:hover, .review .review-info:hover, .review .review-head:hover, .blog .sub-blog-info:hover, .blog .sub-blog-head:hover, .new .sub-new-info:hover, .new .sub-new-head:hover, .main-new .main-new-info:hover, .main-new .main-new-head:hover, .advanced-search-head > p:hover, .advanced-search-head:hover, .breadcrumb .show-mobile:hover, .breadcrumb a:hover, .breadcrumb:hover, .menu-btn:hover, .sec-bar .search-btn:hover, .lang:hover, .review-post li a:hover, .search-cats li a:hover, .search-cats:hover, .car-slider .swiper-button-prev:hover, .car-slider .swiper-button-next:hover, .prices .owl-dots .owl-dot span:hover, .prices .owl-dots .owl-dot:hover, .prices .owl-dots:hover, .similar-news .owl-dots .owl-dot span:hover, .similar-news .owl-dots .owl-dot:hover, .similar-news .owl-dots:hover, .similar-reviews .owl-dots .owl-dot span:hover, .similar-reviews .owl-dots .owl-dot:hover, .similar-reviews .owl-dots:hover, .videos .owl-dots .owl-dot span:hover, .videos .owl-dots .owl-dot:hover, .videos .owl-dots:hover, .nav-links .navlink:hover, .nav-links:hover, .search-pop .search-btn:hover, .newsletter-sec .news-btn:hover, .newsletter-sec .news-input:hover, .newsletter-sec .newsletter-info:hover, .newsletter-sec .newsletter-head:hover, .adv-search-button:hover, .search-input:hover, .tag:hover, .share .socila-link:hover, .share .share-with:hover, .car-info:hover, .see-more-btns:hover, .car-name:hover, .sec-head:hover {
+.footer-sec .coprights p:hover, .similar-reviews .car-review-title:hover, .add-comment textarea:hover, .add-comment input:hover, .add-comment label:hover, .add-comment .form-hint:hover, .add-comment .comment-add-head:hover, .comments .comment-text:hover, .comments .comment-time:hover, .comments .user-name:hover, .similar-new-title:hover, .video-title:hover, .video-anchor:hover, .price:hover, .car-price-title:hover, .review .review-info:hover, .review .review-head:hover, .blog .sub-blog-info:hover, .blog .sub-blog-head:hover, .new .sub-new-info:hover, .new .sub-new-head:hover, .main-new .main-new-info:hover, .main-new .main-new-head:hover, .advanced-search-head > p:hover, .advanced-search-head:hover, .breadcrumb a:hover, .breadcrumb:hover, .menu-btn:hover, .sec-bar .search-btn:hover, .lang:hover, .review-post li a:hover, .search-cats li a:hover, .search-cats:hover, .car-slider .swiper-button-prev:hover, .car-slider .swiper-button-next:hover, .prices .owl-dots .owl-dot span:hover, .prices .owl-dots .owl-dot:hover, .prices .owl-dots:hover, .similar-news .owl-dots .owl-dot span:hover, .similar-news .owl-dots .owl-dot:hover, .similar-news .owl-dots:hover, .similar-reviews .owl-dots .owl-dot span:hover, .similar-reviews .owl-dots .owl-dot:hover, .similar-reviews .owl-dots:hover, .videos .owl-dots .owl-dot span:hover, .videos .owl-dots .owl-dot:hover, .videos .owl-dots:hover, .nav-links .navlink:hover, .nav-links:hover, .search-pop .search-btn:hover, .newsletter-sec .news-btn:hover, .newsletter-sec .news-input:hover, .newsletter-sec .newsletter-info:hover, .newsletter-sec .newsletter-head:hover, .adv-search-button:hover, .search-input:hover, .tag:hover, .share .socila-link:hover, .share .share-with:hover, .car-info:hover, .see-more-btns:hover, .car-name:hover, .sec-head:hover {
   text-decoration: none;
   outline: none;
   box-shadow: none;
   border: none;
 }
-.footer-sec .coprights p:focus, .similar-reviews .car-review-title:focus, .add-comment textarea:focus, .add-comment input:focus, .add-comment label:focus, .add-comment .form-hint:focus, .add-comment .comment-add-head:focus, .comments .comment-text:focus, .comments .comment-time:focus, .comments .user-name:focus, .similar-new-title:focus, .video-title:focus, .video-anchor:focus, .price:focus, .car-price-title:focus, .review .review-info:focus, .review .review-head:focus, .blog .sub-blog-info:focus, .blog .sub-blog-head:focus, .new .sub-new-info:focus, .new .sub-new-head:focus, .main-new .main-new-info:focus, .main-new .main-new-head:focus, .advanced-search-head > p:focus, .advanced-search-head:focus, .breadcrumb .show-mobile:focus, .breadcrumb a:focus, .breadcrumb:focus, .menu-btn:focus, .sec-bar .search-btn:focus, .lang:focus, .review-post li a:focus, .search-cats li a:focus, .search-cats:focus, .car-slider .swiper-button-prev:focus, .car-slider .swiper-button-next:focus, .prices .owl-dots .owl-dot span:focus, .prices .owl-dots .owl-dot:focus, .prices .owl-dots:focus, .similar-news .owl-dots .owl-dot span:focus, .similar-news .owl-dots .owl-dot:focus, .similar-news .owl-dots:focus, .similar-reviews .owl-dots .owl-dot span:focus, .similar-reviews .owl-dots .owl-dot:focus, .similar-reviews .owl-dots:focus, .videos .owl-dots .owl-dot span:focus, .videos .owl-dots .owl-dot:focus, .videos .owl-dots:focus, .nav-links .navlink:focus, .nav-links:focus, .search-pop .search-btn:focus, .newsletter-sec .news-btn:focus, .newsletter-sec .news-input:focus, .newsletter-sec .newsletter-info:focus, .newsletter-sec .newsletter-head:focus, .adv-search-button:focus, .search-input:focus, .tag:focus, .share .socila-link:focus, .share .share-with:focus, .car-info:focus, .see-more-btns:focus, .car-name:focus, .sec-head:focus {
+.footer-sec .coprights p:focus, .similar-reviews .car-review-title:focus, .add-comment textarea:focus, .add-comment input:focus, .add-comment label:focus, .add-comment .form-hint:focus, .add-comment .comment-add-head:focus, .comments .comment-text:focus, .comments .comment-time:focus, .comments .user-name:focus, .similar-new-title:focus, .video-title:focus, .video-anchor:focus, .price:focus, .car-price-title:focus, .review .review-info:focus, .review .review-head:focus, .blog .sub-blog-info:focus, .blog .sub-blog-head:focus, .new .sub-new-info:focus, .new .sub-new-head:focus, .main-new .main-new-info:focus, .main-new .main-new-head:focus, .advanced-search-head > p:focus, .advanced-search-head:focus, .breadcrumb a:focus, .breadcrumb:focus, .menu-btn:focus, .sec-bar .search-btn:focus, .lang:focus, .review-post li a:focus, .search-cats li a:focus, .search-cats:focus, .car-slider .swiper-button-prev:focus, .car-slider .swiper-button-next:focus, .prices .owl-dots .owl-dot span:focus, .prices .owl-dots .owl-dot:focus, .prices .owl-dots:focus, .similar-news .owl-dots .owl-dot span:focus, .similar-news .owl-dots .owl-dot:focus, .similar-news .owl-dots:focus, .similar-reviews .owl-dots .owl-dot span:focus, .similar-reviews .owl-dots .owl-dot:focus, .similar-reviews .owl-dots:focus, .videos .owl-dots .owl-dot span:focus, .videos .owl-dots .owl-dot:focus, .videos .owl-dots:focus, .nav-links .navlink:focus, .nav-links:focus, .search-pop .search-btn:focus, .newsletter-sec .news-btn:focus, .newsletter-sec .news-input:focus, .newsletter-sec .newsletter-info:focus, .newsletter-sec .newsletter-head:focus, .adv-search-button:focus, .search-input:focus, .tag:focus, .share .socila-link:focus, .share .share-with:focus, .car-info:focus, .see-more-btns:focus, .car-name:focus, .sec-head:focus {
   text-decoration: none;
   outline: none;
   box-shadow: none;
   border: none;
 }
-.footer-sec .coprights p:active, .similar-reviews .car-review-title:active, .add-comment textarea:active, .add-comment input:active, .add-comment label:active, .add-comment .form-hint:active, .add-comment .comment-add-head:active, .comments .comment-text:active, .comments .comment-time:active, .comments .user-name:active, .similar-new-title:active, .video-title:active, .video-anchor:active, .price:active, .car-price-title:active, .review .review-info:active, .review .review-head:active, .blog .sub-blog-info:active, .blog .sub-blog-head:active, .new .sub-new-info:active, .new .sub-new-head:active, .main-new .main-new-info:active, .main-new .main-new-head:active, .advanced-search-head > p:active, .advanced-search-head:active, .breadcrumb .show-mobile:active, .breadcrumb a:active, .breadcrumb:active, .menu-btn:active, .sec-bar .search-btn:active, .lang:active, .review-post li a:active, .search-cats li a:active, .search-cats:active, .car-slider .swiper-button-prev:active, .car-slider .swiper-button-next:active, .prices .owl-dots .owl-dot span:active, .prices .owl-dots .owl-dot:active, .prices .owl-dots:active, .similar-news .owl-dots .owl-dot span:active, .similar-news .owl-dots .owl-dot:active, .similar-news .owl-dots:active, .similar-reviews .owl-dots .owl-dot span:active, .similar-reviews .owl-dots .owl-dot:active, .similar-reviews .owl-dots:active, .videos .owl-dots .owl-dot span:active, .videos .owl-dots .owl-dot:active, .videos .owl-dots:active, .nav-links .navlink:active, .nav-links:active, .search-pop .search-btn:active, .newsletter-sec .news-btn:active, .newsletter-sec .news-input:active, .newsletter-sec .newsletter-info:active, .newsletter-sec .newsletter-head:active, .adv-search-button:active, .search-input:active, .tag:active, .share .socila-link:active, .share .share-with:active, .car-info:active, .see-more-btns:active, .car-name:active, .sec-head:active {
+.footer-sec .coprights p:active, .similar-reviews .car-review-title:active, .add-comment textarea:active, .add-comment input:active, .add-comment label:active, .add-comment .form-hint:active, .add-comment .comment-add-head:active, .comments .comment-text:active, .comments .comment-time:active, .comments .user-name:active, .similar-new-title:active, .video-title:active, .video-anchor:active, .price:active, .car-price-title:active, .review .review-info:active, .review .review-head:active, .blog .sub-blog-info:active, .blog .sub-blog-head:active, .new .sub-new-info:active, .new .sub-new-head:active, .main-new .main-new-info:active, .main-new .main-new-head:active, .advanced-search-head > p:active, .advanced-search-head:active, .breadcrumb a:active, .breadcrumb:active, .menu-btn:active, .sec-bar .search-btn:active, .lang:active, .review-post li a:active, .search-cats li a:active, .search-cats:active, .car-slider .swiper-button-prev:active, .car-slider .swiper-button-next:active, .prices .owl-dots .owl-dot span:active, .prices .owl-dots .owl-dot:active, .prices .owl-dots:active, .similar-news .owl-dots .owl-dot span:active, .similar-news .owl-dots .owl-dot:active, .similar-news .owl-dots:active, .similar-reviews .owl-dots .owl-dot span:active, .similar-reviews .owl-dots .owl-dot:active, .similar-reviews .owl-dots:active, .videos .owl-dots .owl-dot span:active, .videos .owl-dots .owl-dot:active, .videos .owl-dots:active, .nav-links .navlink:active, .nav-links:active, .search-pop .search-btn:active, .newsletter-sec .news-btn:active, .newsletter-sec .news-input:active, .newsletter-sec .newsletter-info:active, .newsletter-sec .newsletter-head:active, .adv-search-button:active, .search-input:active, .tag:active, .share .socila-link:active, .share .share-with:active, .car-info:active, .see-more-btns:active, .car-name:active, .sec-head:active {
   text-decoration: none;
   outline: none;
   box-shadow: none;
@@ -1226,6 +1226,9 @@ html[dir=ltr] .search-pop .search-btn {
 .nav-links .navlink:hover {
   color: #ed2228;
 }
+.nav-links .navlink .act {
+  color: #ed2228;
+}
 
 html[dir=ltr] .nav-links {
   margin-left: 55px;
@@ -1953,6 +1956,10 @@ html[dir=ltr] .menu-btn {
   background-color: transparent;
   margin-top: 165px;
 }
+.breadcrumb .container {
+  display: flex;
+  align-items: center;
+}
 @media (max-width: 767px) {
   .breadcrumb {
     margin-top: 137px;
@@ -1981,27 +1988,17 @@ html[dir=ltr] .menu-btn {
     margin: 0 9px;
   }
 }
-@media (max-width: 767px) {
-  .breadcrumb a:nth-of-type(3) {
-    display: none;
-  }
+.breadcrumb a:last-of-type {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex-basis: 30%;
+  overflow: hidden;
 }
 .breadcrumb a:last-of-type:after {
   display: none;
 }
 .breadcrumb a:hover {
   color: #ed2228;
-}
-.breadcrumb .show-mobile {
-  font-family: Frutiger-bold;
-  display: none;
-  color: #9e9e9e;
-  font-size: 13px;
-}
-@media (max-width: 767px) {
-  .breadcrumb .show-mobile {
-    display: inline-block;
-  }
 }
 
 .advanced-search-head {
