@@ -2037,13 +2037,13 @@ html[dir=ltr] .menu-btn {
     margin: 0 9px;
   }
 }
-.breadcrumb a:last-of-type {
+.breadcrumb a:nth-of-type(3) {
   white-space: nowrap;
   text-overflow: ellipsis;
   flex-basis: 30%;
   overflow: hidden;
 }
-.breadcrumb a:last-of-type:after {
+.breadcrumb a:nth-of-type(3):after {
   display: none;
 }
 .breadcrumb a:hover {
