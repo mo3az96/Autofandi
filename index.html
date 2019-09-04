@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css" />
   <link rel="stylesheet" href="css/owl.theme.default.min.css" />
   <link rel="stylesheet" href="css/hover-min.css" />
+  <link rel="stylesheet" href="css/swiper.css" />
   <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css" />
   <link rel="stylesheet" href="css/main.css" />
@@ -20,6 +21,7 @@
   <div class="load-page">
     <div class="loader"></div>
   </div>
+
   <div class="search-overlay"></div>
   <!-- Start Header -->
   <div class="header">
@@ -49,9 +51,9 @@
 
             <form class="search">
               <input type="text" class="search-input" placeholder="بتدور على ايه؟">
-              <a href="search.html" class="search-btn search-button">
+              <button type="submit" class="search-btn search-button">
                 <i class="fas fa-search"></i>
-              </a>
+              </button>
               <div class="search-btn open-search">
                 <i class="fas fa-search"></i>
               </div>
@@ -90,9 +92,9 @@
       <form class="search">
         <div class="search-container">
           <input type="text" class="search-input" placeholder="بتدور على ايه؟">
-          <a href="search.html" class="search-btn search-button">
+          <button type="submit" class="search-btn">
             <i class="fas fa-search"></i>
-          </a>
+          </button>
         </div>
       </form>
     </div>
@@ -102,63 +104,79 @@
   <!-- start Advanced Search -->
   <div class="advanced-search adv-search">
     <div class="container">
-      <div class="adv-search">
-        <h1 class="advanced-search-head">
-          <p> ابحث </p>آخر أخبار ومراجعات وأسعار السيارات الجديدة والمستعملة
-        </h1>
-        <div class="selects">
-          <div class="select-tags car-tag">
-            <select class="selectpicker">
-              <option hidden>الماركة</option>
-              <option>ألفا روميو</option>
-              <option>أم جي</option>
-              <option>أوبل</option>
-              <option>أودي</option>
-              <option>بايك سينوفا</option>
-              <option>بايك ويوانج</option>
-              <option>بروتون</option>
-              <option>ألفا روميو</option>
-              <option>أم جي</option>
-              <option>أوبل</option>
-              <option>أودي</option>
-              <option>بايك سينوفا</option>
-              <option>بايك ويوانج</option>
-              <option>بروتون</option>
-            </select>
-          </div>
-          <div class="select-tags model-tag">
-            <select class="selectpicker">
-              <option hidden>الموديل</option>
-              <option>بيجاس</option>
-              <option>جي ال بي</option>
-              <option>رينيجيد</option>
-              <option>غران كوبيه</option>
-              <option>بيجاس</option>
-              <option>بيجاس</option>
-              <option>جي ال بي</option>
-              <option>رينيجيد</option>
-              <option>غران كوبيه</option>
-              <option>بيجاس</option>
-            </select>
-          </div>
-          <div class="select-tags year-tag">
-            <select class="selectpicker">
-              <option hidden>السنه</option>
-              <option>2019</option>
-              <option>2018</option>
-              <option>2017</option>
-              <option>2016</option>
-              <option>2015</option>
-              <option>2014</option>
-              <option>2013</option>
-              <option>2012</option>
-              <option>2011</option>
-              <option>2010</option>
-            </select>
-          </div>
-          <a href="search.html" class="adv-search-button"><i class="fas fa-search"></i>بحث</a>
+
+      <h1 class="advanced-search-head">
+        <p> ابحث </p>آخر أخبار ومراجعات وأسعار السيارات الجديدة والمستعملة
+      </h1>
+      <div class="selects">
+        <div class="select-tags car-tag">
+          <select class="selectpicker">
+            <option hidden>الماركة</option>
+            <option>ألفا روميو</option>
+            <option>أم جي</option>
+            <option>أوبل</option>
+            <option>أودي</option>
+            <option>بايك سينوفا</option>
+            <option>بايك ويوانج</option>
+            <option>بروتون</option>
+            <option>ألفا روميو</option>
+            <option>أم جي</option>
+            <option>أوبل</option>
+            <option>أودي</option>
+            <option>بايك سينوفا</option>
+            <option>بايك ويوانج</option>
+            <option>بروتون</option>
+          </select>
         </div>
+        <div class="select-tags model-tag">
+          <select class="selectpicker">
+            <option hidden>الموديل</option>
+            <option>بيجاس</option>
+            <option>جي ال بي</option>
+            <option>رينيجيد</option>
+            <option>غران كوبيه</option>
+            <option>بيجاس</option>
+            <option>بيجاس</option>
+            <option>جي ال بي</option>
+            <option>رينيجيد</option>
+            <option>غران كوبيه</option>
+            <option>بيجاس</option>
+          </select>
+        </div>
+        <div class="select-tags year-tag">
+          <select class="selectpicker">
+            <option hidden>السنه</option>
+            <option>2019</option>
+            <option>2018</option>
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+            <option>2014</option>
+            <option>2013</option>
+            <option>2012</option>
+            <option>2011</option>
+            <option>2010</option>
+          </select>
+        </div>
+        <div class="select-tags cat-tag">
+          <select class="selectpicker">
+            <option hidden>الفئة</option>
+            <option>2019</option>
+            <option>2018</option>
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+            <option>2014</option>
+            <option>2013</option>
+            <option>2012</option>
+            <option>2011</option>
+            <option>2010</option>
+          </select>
+        </div>
+        <a href="#!" class="adv-search-button"><i class="fas fa-search"></i>بحث</a>
       </div>
+
+
     </div>
   </div>
   <!-- start Advanced Search -->
@@ -184,86 +202,86 @@
             </div>
             <div class="sub-news">
               <div class="new">
-                <a href="#" class="new-img"><img src="images/new2.jpg" alt="new2" class="img-responsive"></a>
+                <a href="#!" class="new-img"><img src="images/new2.jpg" alt="new2" class="img-responsive"></a>
                 <div class="info">
-                  <a href="#" class="sub-new-head">شركة مرسيدس تطلق GLB الجديدة كلياً
+                  <a href="#!" class="sub-new-head">شركة مرسيدس تطلق GLB الجديدة كلياً
                     بسبعة مقاعد</a>
                   <p class="sub-new-info">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن
                     التركيز على الشكل الخارجي للنص...</p>
                   <div class="tags">
-                    <a href="#" class="tag">مرسيدس</a>
-                    <a href="#" class="tag">جي ال بي</a>
-                    <a href="#" class="tag">2019</a>
+                    <a href="#!" class="tag">مرسيدس</a>
+                    <a href="#!" class="tag">جي ال بي</a>
+                    <a href="#!" class="tag">2019</a>
                   </div>
                 </div>
               </div>
               <div class="new">
-                <a href="#" class="new-img"><img src="images/new3.jpg" alt="new2" class="img-responsive"></a>
+                <a href="#!" class="new-img"><img src="images/new3.jpg" alt="new2" class="img-responsive"></a>
                 <div class="info">
-                  <a href="#" class="sub-new-head">شركة مرسيدس تطلق GLB الجديدة كلياً
+                  <a href="#!" class="sub-new-head">شركة مرسيدس تطلق GLB الجديدة كلياً
                     بسبعة مقاعد</a>
                   <p class="sub-new-info">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن
                     التركيز على الشكل الخارجي للنص...</p>
                   <div class="tags">
-                    <a href="#" class="tag">مرسيدس</a>
-                    <a href="#" class="tag">جي ال بي</a>
-                    <a href="#" class="tag">2019</a>
+                    <a href="#!" class="tag">مرسيدس</a>
+                    <a href="#!" class="tag">جي ال بي</a>
+                    <a href="#!" class="tag">2019</a>
                   </div>
                 </div>
               </div>
               <div class="new">
-                <a href="#" class="new-img"><img src="images/new4.jpg" alt="new2" class="img-responsive"></a>
+                <a href="#!" class="new-img"><img src="images/new4.jpg" alt="new2" class="img-responsive"></a>
                 <div class="info">
-                  <a href="#" class="sub-new-head">شركة مرسيدس تطلق GLB الجديدة كلياً
+                  <a href="#!" class="sub-new-head">شركة مرسيدس تطلق GLB الجديدة كلياً
                     بسبعة مقاعد</a>
                   <p class="sub-new-info">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن
                     التركيز على الشكل الخارجي للنص...</p>
                   <div class="tags">
-                    <a href="#" class="tag">مرسيدس</a>
-                    <a href="#" class="tag">جي ال بي</a>
-                    <a href="#" class="tag">2019</a>
+                    <a href="#!" class="tag">مرسيدس</a>
+                    <a href="#!" class="tag">جي ال بي</a>
+                    <a href="#!" class="tag">2019</a>
                   </div>
                 </div>
               </div>
               <div class="new">
-                <a href="#" class="new-img"><img src="images/new5.jpg" alt="new2" class="img-responsive"></a>
+                <a href="#!" class="new-img"><img src="images/new5.jpg" alt="new2" class="img-responsive"></a>
                 <div class="info">
-                  <a href="#" class="sub-new-head">شركة مرسيدس تطلق GLB الجديدة كلياً
+                  <a href="#!" class="sub-new-head">شركة مرسيدس تطلق GLB الجديدة كلياً
                     بسبعة مقاعد</a>
                   <p class="sub-new-info">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن
                     التركيز على الشكل الخارجي للنص...</p>
                   <div class="tags">
-                    <a href="#" class="tag">مرسيدس</a>
-                    <a href="#" class="tag">جي ال بي</a>
-                    <a href="#" class="tag">2019</a>
+                    <a href="#!" class="tag">مرسيدس</a>
+                    <a href="#!" class="tag">جي ال بي</a>
+                    <a href="#!" class="tag">2019</a>
                   </div>
                 </div>
               </div>
               <div class="new">
-                <a href="#" class="new-img"><img src="images/new6.jpg" alt="new2" class="img-responsive"></a>
+                <a href="#!" class="new-img"><img src="images/new6.jpg" alt="new2" class="img-responsive"></a>
                 <div class="info">
-                  <a href="#" class="sub-new-head">شركة مرسيدس تطلق GLB الجديدة كلياً
+                  <a href="#!" class="sub-new-head">شركة مرسيدس تطلق GLB الجديدة كلياً
                     بسبعة مقاعد</a>
                   <p class="sub-new-info">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن
                     التركيز على الشكل الخارجي للنص...</p>
                   <div class="tags">
-                    <a href="#" class="tag">مرسيدس</a>
-                    <a href="#" class="tag">جي ال بي</a>
-                    <a href="#" class="tag">2019</a>
+                    <a href="#!" class="tag">مرسيدس</a>
+                    <a href="#!" class="tag">جي ال بي</a>
+                    <a href="#!" class="tag">2019</a>
                   </div>
                 </div>
               </div>
               <div class="new">
-                <a href="#" class="new-img"><img src="images/new7.jpg" alt="new2" class="img-responsive"></a>
+                <a href="#!" class="new-img"><img src="images/new7.jpg" alt="new2" class="img-responsive"></a>
                 <div class="info">
-                  <a href="#" class="sub-new-head">شركة مرسيدس تطلق GLB الجديدة كلياً
+                  <a href="#!" class="sub-new-head">شركة مرسيدس تطلق GLB الجديدة كلياً
                     بسبعة مقاعد</a>
                   <p class="sub-new-info">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن
                     التركيز على الشكل الخارجي للنص...</p>
                   <div class="tags">
-                    <a href="#" class="tag">مرسيدس</a>
-                    <a href="#" class="tag">جي ال بي</a>
-                    <a href="#" class="tag">2019</a>
+                    <a href="#!" class="tag">مرسيدس</a>
+                    <a href="#!" class="tag">جي ال بي</a>
+                    <a href="#!" class="tag">2019</a>
                   </div>
                 </div>
               </div>
@@ -273,6 +291,25 @@
           </div>
         </div>
         <div class="col-md-3">
+          <div class="brands-sec">
+            <h1 class="brands-header sec-head">أشهر الماركات</h1>
+            <div class="brands">
+              <a href="#!" class="brand-img"><img src="images/brand-1.png" alt=""></a>
+              <a href="#!" class="brand-img"><img src="images/brand-2.png" alt=""></a>
+              <a href="#!" class="brand-img"><img src="images/brand-3.png" alt=""></a>
+              <a href="#!" class="brand-img"><img src="images/brand-4.png" alt=""></a>
+              <a href="#!" class="brand-img"><img src="images/brand-5.png" alt=""></a>
+              <a href="#!" class="brand-img"><img src="images/brand-6.png" alt=""></a>
+              <a href="#!" class="brand-img"><img src="images/brand-7.png" alt=""></a>
+              <a href="#!" class="brand-img"><img src="images/brand-8.png" alt=""></a>
+              <a href="#!" class="brand-img"><img src="images/brand-9.png" alt=""></a>
+              <a href="#!" class="brand-img"><img src="images/brand-10.png" alt=""></a>
+              <a href="#!" class="brand-img"><img src="images/brand-11.png" alt=""></a>
+              <a href="#!" class="brand-img"><img src="images/brand-12.png" alt=""></a>
+            </div>
+            <a href="#!" class="see-more-brands see-more-btns"><i class="fas fa-car"></i> استعرض المزيد من
+              الماركات</a>
+          </div>
           <div class="videos-sec">
             <h1 class="videos-header sec-head">فيديوهات جديدة</h1>
             <div class="videos">
@@ -303,17 +340,8 @@
                   <h1 class="video-title">تجربة قيادة كيا بيجاس 2020</h1>
                 </a>
               </div>
-              <div class="video">
-                <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=fZv5s-0IR9E&t" class="video-anchor">
-                  <div class="video-img">
-                    <img src="images/video4.jpg" alt="" class="img-responsive">
-                    <div class="play-video"><img src="images/play.png" alt="play"></div>
-                  </div>
-                  <h1 class="video-title">تجربة قيادة كيا بيجاس 2020</h1>
-                </a>
-              </div>
             </div>
-            <a href="#" class="see-more-videos see-more-btns"><i class="fas fa-play-circle"></i>شاهد المزيد من
+            <a href="#!" class="see-more-videos see-more-btns"><i class="fas fa-play-circle"></i>شاهد المزيد من
               الفيديوهات</a>
           </div>
           <div class="car-prices">
@@ -326,22 +354,17 @@
                 <h1 class="price">319,990 جنيه مصري</h1>
               </div>
               <div class="car-price">
-                <a href="#" class="car-img"><img src="images/price2.jpg" alt="car" class="img-responsive"></a>
-                <a href="#" class="car-price-title">اوبل كورسا 2019</a>
+                <a href="#!" class="car-img"><img src="images/price2.jpg" alt="car" class="img-responsive"></a>
+                <a href="#!" class="car-price-title">اوبل كورسا 2019</a>
                 <h1 class="price">319,990 جنيه مصري</h1>
               </div>
               <div class="car-price">
-                <a href="#" class="car-img"><img src="images/price3.jpg" alt="car" class="img-responsive"></a>
-                <a href="#" class="car-price-title">اوبل كورسا 2019</a>
-                <h1 class="price">319,990 جنيه مصري</h1>
-              </div>
-              <div class="car-price">
-                <a href="#" class="car-img"><img src="images/price4.jpg" alt="car" class="img-responsive"></a>
-                <a href="#" class="car-price-title">اوبل كورسا 2019</a>
+                <a href="#!" class="car-img"><img src="images/price3.jpg" alt="car" class="img-responsive"></a>
+                <a href="#!" class="car-price-title">اوبل كورسا 2019</a>
                 <h1 class="price">319,990 جنيه مصري</h1>
               </div>
             </div>
-            <a href="#" class="see-more-videos see-more-btns"><i class="fas fa-credit-card"></i> استعرض
+            <a href="#!" class="see-more-videos see-more-btns"><i class="fas fa-credit-card"></i> استعرض
               المزيد من الأسعار</a>
           </div>
         </div>
@@ -373,18 +396,18 @@
     <div class="container">
 
       <div class="footer">
-        <a href="#" class="foot-logo"><img src="images/foot-logo-ar.png" alt="logo" class="img-responsive"></a>
+        <a href="#!" class="foot-logo"><img src="images/foot-logo-ar.png" alt="logo" class="img-responsive"></a>
         <div class="foot">
           <div class="social">
-            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-google-plus-g"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#!" class="social-link"><i class="fab fa-youtube"></i></a>
+            <a href="#!" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#!" class="social-link"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#!" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#!" class="social-link"><i class="fab fa-facebook-f"></i></a>
           </div>
           <div class="coprights">
             <p class="autofandi">جميع الحقوق محفوظة © اوتوفندي 2019</p>
-            <p class="tasawk">تصميم وتطوير<a href="#" class="tasawk-logo"><img src="images/tasawak-ar.png"
+            <p class="tasawk">تصميم وتطوير<a href="#!" class="tasawk-logo"><img src="images/tasawak-ar.png"
                   alt="tasawak"></a></p>
           </div>
         </div>
@@ -396,6 +419,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap-select.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="js/swiper.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>

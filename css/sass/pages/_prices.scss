@@ -29,6 +29,7 @@
 .car-price-page {
     margin-top: 35px;
     margin-bottom: 0;
+    position: relative;
 
     .car-price-title {
         @media (max-width:767px) {
@@ -36,7 +37,53 @@
         }
     }
 
+    &:after {
+        color: #fff;
+        position: absolute;
+        padding: 0 10px;
+        height: 25px;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    &.new-car {
+        &:after {
+            content: "جديد";
+            background-color: rgba(76, 175, 82, 0.902);
+        }
+    }
+
+    &.used-car {
+        &:after {
+            content: "مستعمل";
+            background-color: rgba($maincolor, 0.902);
+        }
+    }
+}
+
+html[dir="ltr"] .car-price-page {
+    &:after {
+        top: 10px;
+        left: 10px;
+        right: auto;
+    }
+
+    &.new-car {
+        &:after {
+            content: "New";
+
+        }
+    }
+
+    &.used-car {
+        &:after {
+            content: "Used";
+
+        }
+    }
 }
 
 .price {

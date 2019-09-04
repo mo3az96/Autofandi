@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/hover-min.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -19,6 +20,10 @@
     <div class="load-page">
         <div class="loader"></div>
     </div>
+    <div class="load-page">
+        <div class="loader"></div>
+    </div>
+
     <div class="search-overlay"></div>
     <!-- Start Header -->
     <div class="header">
@@ -49,9 +54,9 @@
 
                         <form class="search">
                             <input type="text" class="search-input" placeholder="What are you searching for ?">
-                            <a href="search-en.html" type="submit" class="search-btn search-button">
+                            <button type="submit" class="search-btn search-button">
                                 <i class="fas fa-search"></i>
-                            </a>
+                            </button>
                             <div class="search-btn open-search">
                                 <i class="fas fa-search"></i>
                             </div>
@@ -90,9 +95,9 @@
             <form class="search">
                 <div class="search-container">
                     <input type="text" class="search-input" placeholder="What are you searching for ?">
-                    <a href="search-en.html" class="search-btn">
+                    <button type="submit" class="search-btn">
                         <i class="fas fa-search"></i>
-                    </a>
+                    </button>
                 </div>
             </form>
         </div>
@@ -156,7 +161,22 @@
                         <option>2010</option>
                     </select>
                 </div>
-                <a href="search-en.html" class="adv-search-button"><i class="fas fa-search"></i>Search</a>
+                <div class="select-tags cat-tag">
+                    <select class="selectpicker">
+                        <option hidden>Category</option>
+                        <option>2019</option>
+                        <option>2018</option>
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                        <option>2013</option>
+                        <option>2012</option>
+                        <option>2011</option>
+                        <option>2010</option>
+                    </select>
+                </div>
+                <a href="#" class="adv-search-button"><i class="fas fa-search"></i>Search</a>
             </div>
 
         </div>
@@ -288,6 +308,24 @@
                     </div>
                 </div>
                 <div class="col-md-3">
+                    <div class="brands-sec">
+                        <h1 class="brands-header sec-head">Brands</h1>
+                        <div class="brands">
+                            <a href="#!" class="brand-img"><img src="images/brand-1.png" alt=""></a>
+                            <a href="#!" class="brand-img"><img src="images/brand-2.png" alt=""></a>
+                            <a href="#!" class="brand-img"><img src="images/brand-3.png" alt=""></a>
+                            <a href="#!" class="brand-img"><img src="images/brand-4.png" alt=""></a>
+                            <a href="#!" class="brand-img"><img src="images/brand-5.png" alt=""></a>
+                            <a href="#!" class="brand-img"><img src="images/brand-6.png" alt=""></a>
+                            <a href="#!" class="brand-img"><img src="images/brand-7.png" alt=""></a>
+                            <a href="#!" class="brand-img"><img src="images/brand-8.png" alt=""></a>
+                            <a href="#!" class="brand-img"><img src="images/brand-9.png" alt=""></a>
+                            <a href="#!" class="brand-img"><img src="images/brand-10.png" alt=""></a>
+                            <a href="#!" class="brand-img"><img src="images/brand-11.png" alt=""></a>
+                            <a href="#!" class="brand-img"><img src="images/brand-12.png" alt=""></a>
+                        </div>
+                        <a href="#!" class="see-more-brands see-more-btns"><i class="fas fa-car"></i>See more Brands</a>
+                    </div>
                     <div class="videos-sec">
                         <h1 class="videos-header sec-head">Videos</h1>
                         <div class="videos">
@@ -321,16 +359,6 @@
                                     <h1 class="video-title">Kia Pegas 2020</h1>
                                 </a>
                             </div>
-                            <div class="video">
-                                <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=fZv5s-0IR9E&t"
-                                    class="video-anchor">
-                                    <div class="video-img">
-                                        <img src="images/video4.jpg" alt="" class="img-responsive">
-                                        <div class="play-video"><img src="images/play.png" alt="play"></div>
-                                    </div>
-                                    <h1 class="video-title">Kia Pegas 2020</h1>
-                                </a>
-                            </div>
                         </div>
                         <a href="#" class="see-more-videos see-more-btns"><i class="fas fa-play-circle"></i>Watch more
                             videos
@@ -353,12 +381,6 @@
                             </div>
                             <div class="car-price">
                                 <a href="#" class="car-img"><img src="images/price3.jpg" alt="car"
-                                        class="img-responsive"></a>
-                                <a href="#" class="car-price-title">Opel Corsa 2019</a>
-                                <h1 class="price">319,990 L.E</h1>
-                            </div>
-                            <div class="car-price">
-                                <a href="#" class="car-img"><img src="images/price4.jpg" alt="car"
                                         class="img-responsive"></a>
                                 <a href="#" class="car-price-title">Opel Corsa 2019</a>
                                 <h1 class="price">319,990 L.E</h1>
@@ -419,6 +441,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
 </body>

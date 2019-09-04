@@ -3,10 +3,16 @@ window.onload = function () {
     $(".loader").fadeOut(1000, function () {
         $(this).parent().hide();
         $('body').css("overflow", "auto");
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1);
     });
 
 }
 $(document).ready(function () {
+    $('.selectpicker').selectpicker({
+        dropupAuto: false,
+    });
     $(window).scroll(function () {
         if ($(this).scrollTop() >= 30) {
             $('.Sec-bar').addClass("fixed-top");
@@ -16,6 +22,7 @@ $(document).ready(function () {
     });
     // Mobile Side Menu 
     $('.menu-btn').click(function () {
+
         $('.xs-nav').show();
         $('.main-xs-nav').addClass('inscreen');
         $('.main-xs-nav').removeClass('outscreen');
@@ -244,4 +251,10 @@ $(document).ready(function () {
             swiper: galleryThumbs
         }
     });
+    $('.checkmark').click(function () {
+        var x = $(this).attr('id');
+        $('input[name=radio]').removeAttr('checked');
+        $('input' + '#' + x).attr("checked", "checked");
+    });
+
 });

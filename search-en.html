@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/hover-min.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -49,9 +50,9 @@
 
                         <form class="search">
                             <input type="text" class="search-input" placeholder="What are you searching for ?">
-                            <a href="search-en.html" type="submit" class="search-btn search-button">
+                            <button type="submit" class="search-btn search-button">
                                 <i class="fas fa-search"></i>
-                            </a>
+                            </button>
                             <div class="search-btn open-search">
                                 <i class="fas fa-search"></i>
                             </div>
@@ -94,9 +95,9 @@
             <form class="search">
                 <div class="search-container">
                     <input type="text" class="search-input" placeholder="What are you searching for ?">
-                    <a href="search-en.html" class="search-btn">
+                    <button type="submit" class="search-btn">
                         <i class="fas fa-search"></i>
-                    </a>
+                    </button>
                 </div>
             </form>
         </div>
@@ -156,7 +157,22 @@
                         <option>2010</option>
                     </select>
                 </div>
-                <a href="search-en.html" class="adv-search-button"><i class="fas fa-search"></i>Search</a>
+                <div class="select-tags cat-tag">
+                    <select class="selectpicker">
+                        <option hidden>Category</option>
+                        <option>2019</option>
+                        <option>2018</option>
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                        <option>2013</option>
+                        <option>2012</option>
+                        <option>2011</option>
+                        <option>2010</option>
+                    </select>
+                </div>
+                <a href="#" class="adv-search-button"><i class="fas fa-search"></i>Search</a>
             </div>
             <div class="row">
                 <div class="col-md-3">
@@ -342,6 +358,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
 </body>

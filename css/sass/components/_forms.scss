@@ -152,7 +152,7 @@ html[dir="ltr"] .search-input {
 
 
 .select-tags {
-    margin-left: 8px;
+    margin-left: 7px;
     height: 46px;
 
     @media (max-width:991px) {
@@ -166,9 +166,13 @@ html[dir="ltr"] .search-input {
     }
 
     .bootstrap-select {
-        width: 262px !important;
+        width: 250px !important;
         vertical-align: middle;
         height: 46px;
+
+        @media (max-width:1199px) {
+            width: 200px !important;
+        }
 
         @media (max-width:991px) {
             width: 100% !important;
@@ -230,7 +234,7 @@ html[dir="ltr"] .search-input {
             content: "\f078";
             font-family: "Font Awesome 5 Free";
             font-weight: 900;
-            margin-left: 5px;
+            margin: 0 5px;
             font-size: 10px;
             float: left;
             color: #b3b3b3;
@@ -267,6 +271,7 @@ html[dir="ltr"] .search-input {
         border-radius: 0;
         -webkit-box-shadow: none;
         box-shadow: none;
+        z-index: 5;
 
         &>li {
             &>a {
@@ -347,7 +352,7 @@ html[dir="ltr"] .search-input {
 
 html[dir="ltr"] .select-tags {
     margin-left: 0;
-    margin-right: 8px;
+    margin-right: 7px;
 
     @media (max-width:991px) {
         margin-left: 0;
@@ -362,9 +367,8 @@ html[dir="ltr"] .select-tags {
     .dropdown-toggle.btn-default {
 
         &:after {
-            margin-right: 5px;
+            margin: 0 5px;
             float: right;
-            margin-left: 0;
         }
 
     }
@@ -372,6 +376,8 @@ html[dir="ltr"] .select-tags {
 
 .pages-search {
     margin-top: 32px;
+    padding-bottom: 28px;
+    border-bottom: 2px solid #f2f2f2;
 
     .open {
         .dropdown-toggle.btn-default {
@@ -409,6 +415,11 @@ html[dir="ltr"] .select-tags {
     transition-property: color;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
+    margin-right: -1px;
+
+    @media (max-width: 991px) {
+        margin-right: 0;
+    }
 
     &:before {
         content: "";
@@ -456,6 +467,12 @@ html[dir="ltr"] .select-tags {
 }
 
 html[dir="ltr"] .adv-search-button {
+    margin-right: 0;
+    margin-left: -1px;
+
+    @media (max-width: 991px) {
+        margin-left: 0;
+    }
 
     i {
         margin-right: 9px;
@@ -465,32 +482,25 @@ html[dir="ltr"] .adv-search-button {
 }
 
 .advanced-search {
-    background-color: $seccolor;
     margin-top: 130px;
+    background-image: url(../images/advsearch-ar.jpg);
+    background-color: #000;
+    background-repeat: no-repeat;
+    padding-bottom: 60px;
+    padding-top: 46px;
+    background-position: left;
 
     @media (max-width:767px) {
-        margin-top: 102px;
-        padding-top: 0 !important;
+        margin-top: 0;
     }
 
-    .adv-search {
-        background-image: url(../images/advsearch-ar.jpg);
-        background-repeat: no-repeat;
-        padding-bottom: 60px;
-        padding-top: 46px;
+    @media (max-width:991px) {
+        background-image: none;
+        padding-bottom: 52px;
+    }
 
-        @media (max-width:767px) {
-            margin-top: 0;
-        }
-
-        @media (max-width:991px) {
-            background-image: none;
-            padding-bottom: 52px;
-        }
-
-        @media (max-width:767px) {
-            padding-bottom: 30px;
-        }
+    @media (max-width:767px) {
+        padding-bottom: 30px;
     }
 }
 
@@ -525,10 +535,6 @@ html[dir="ltr"] .advanced-search {
     min-height: 292px;
     top: -50px;
     position: absolute;
-
-    @media (max-width:767px) {
-        padding: 10px;
-    }
 
     @media (max-width:480px) {
         width: 100%;
@@ -817,4 +823,179 @@ html[dir="ltr"] .search-pop {
         left: auto;
     }
 
+}
+
+.radios {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+
+    @media (max-width:767px) {
+        flex-wrap: wrap;
+    }
+}
+
+.radio-cont {
+    display: block;
+    position: relative;
+    padding-right: 30px;
+    margin-left: 31px;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    @media (max-width:767px) {
+        padding-right: 20px;
+        margin-left: 18px;
+
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+}
+
+html[dir="ltr"] .radio-cont {
+
+    padding-left: 30px;
+    margin-right: 31px;
+    padding-right: 0;
+    margin-left: 0;
+
+    @media (max-width:767px) {
+        padding-left: 20px;
+        margin-right: 18px;
+        padding-right: 0;
+        margin-left: 0;
+
+        &:last-child {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+/* Hide the browser's default radio button */
+.radio-cont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border: 2px solid #ededed;
+    border-radius: 0;
+}
+
+html[dir="ltr"] .checkmark {
+    right: auto;
+    left: 0;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-cont:hover input~.checkmark {
+    background-color: #fff;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-cont input:checked~.checkmark {
+    background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-cont input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-cont .checkmark:after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 0;
+    background: $maincolor;
+}
+
+.price-page-search {
+    margin-top: 28px;
+    padding-bottom: 28px;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.sort {
+    margin-left: 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+
+    @media (max-width:767px) {
+        justify-content: space-between;
+    }
+
+    .title {
+        font-size: 16px;
+        color: #000;
+    }
+
+
+
+    .bs3.bootstrap-select .dropdown-toggle .filter-option {
+        padding-right: 0;
+    }
+
+    .btn {
+        padding: 0 9px;
+    }
+
+    .bootstrap-select>.dropdown-toggle {
+        width: auto;
+    }
+
+    .bootstrap-select .dropdown-menu {
+        min-width: auto;
+        min-height: auto;
+        height: auto;
+    }
+
+    .bootstrap-select .dropdown-menu.open {
+        padding: 0 11px 13px;
+        width: auto !important;
+        min-width: auto !important;
+    }
+
+    .inner.open {
+        padding: 0 !important;
+    }
+
+    .select-tags .dropdown-menu.inner {
+        height: auto;
+        min-height: auto;
+    }
+
+    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+        @media (max-width:767px) {
+            width: auto !important;
+        }
+    }
 }
