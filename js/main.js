@@ -11,7 +11,7 @@ window.onload = function () {
 }
 $(document).ready(function () {
     $('.selectpicker').selectpicker({
-        dropupAuto: false,
+
     });
     $(window).scroll(function () {
         if ($(this).scrollTop() >= 30) {
