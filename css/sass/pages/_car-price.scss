@@ -3,13 +3,62 @@
     align-items: center;
     margin-bottom: 21px;
     color: $seccolor;
-
-    @media (max-width:991px) {
-        justify-content: center;
-    }
+    justify-content: space-between;
 
     @media (max-width:480px) {
         flex-direction: column;
+    }
+
+    .car-price-info {
+        display: flex;
+        align-items: center;
+
+        .car-name {
+            margin-left: 15px;
+        }
+    }
+
+    .car-status {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+        height: 25px;
+        position: relative;
+        font-size: 13px;
+        color: #fff;
+        font-family: Frutiger-bold;
+        border-radius: 2px;
+
+        &:after {
+            content: "";
+            width: 0;
+            height: 0;
+            display: block;
+            border-width: 3.5px;
+            border-color: transparent transparent transparent green;
+            border-style: solid;
+            position: absolute;
+            top: 50%;
+            transform: translate(100%, -50%);
+            right: 0;
+        }
+
+        &.status-new {
+            background-color: #5eb763;
+
+            &:after {
+                border-color: transparent transparent transparent #5eb763;
+            }
+        }
+
+        &.status-old {
+            background-color: $maincolor;
+
+            &:after {
+                border-color: transparent transparent transparent $maincolor;
+            }
+        }
     }
 
 
@@ -26,48 +75,132 @@
         position: relative;
         font-size: 16px;
         margin: 0;
+    }
+}
+
+html[dir="ltr"] .car-price-header {
+    .car-price-info {
+
+        .car-name {
+            margin-left: 0;
+            margin-right: 15px;
+        }
+
+    }
+
+    .car-status {
 
         &:after {
-            content: "";
-            width: 0;
-            height: 0;
-            display: block;
-            border-width: 8px;
-            border-color: transparent transparent transparent $maincolor;
-            border-style: solid;
-            position: absolute;
-            top: 50%;
-            transform: translate(100%, -50%);
-            right: 0;
+            transform: translate(-100%, -50%);
+            right: auto;
+            left: 0;
+        }
 
-            @media (max-width:480px) {
-                border-color: transparent transparent #ed2228 transparent;
-                top: 0%;
-                transform: translate(50%, -100%);
-                right: 50%;
-                left: auto;
+        &.status-new {
+            &:after {
+                border-color: transparent #5eb763 transparent transparent;
+            }
+        }
+
+        &.status-old {
+
+            &:after {
+                border-color: transparent $maincolor transparent transparent;
             }
         }
     }
 }
 
-html[dir="ltr"] .car-price-header {
+.table-overflow {
+    width: 100%;
+    overflow-x: auto;
+    height: auto;
+    overflow-y: hidden;
+}
 
-    .price {
+.car-prices-table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 32px;
+    border: 2px solid #f5f5f5;
 
-        &:after {
-            border-color: transparent #ed2228 transparent transparent;
-            transform: translate(-100%, -50%);
-            left: 0;
-            right: auto;
 
-            @media (max-width:480px) {
-                border-color: transparent transparent #ed2228 transparent;
-                top: 0%;
-                transform: translate(50%, -100%);
-                right: 50%;
-                left: auto;
-            }
+    tr {
+        border-top: 2px solid #f5f5f5;
+        height: 40px;
+
+        &:first-child {
+            border-top: none;
         }
+    }
+
+    .car-prices-table-name {
+        width: 492px;
+        min-width: 450px;
+        border-left: 2px solid #f5f5f5;
+        padding: 0 25px;
+        font-size: 16px;
+        color: $seccolor;
+        font-family: Frutiger-bold;
+
+        @media (max-width:1199px) {
+            padding: 0 20px;
+            font-size: 15px;
+        }
+    }
+
+    .car-prices-table-price {
+        width: 165px;
+        border-left: 2px solid #f5f5f5;
+        min-width: 150px;
+        text-align: center;
+        font-size: 16px;
+        color: $seccolor;
+
+        @media (max-width:1199px) {
+            padding: 0 20px;
+            font-size: 15px;
+        }
+    }
+
+    .car-prices-table-seller {
+        width: 182px;
+        min-width: 182px;
+        font-size: 14px;
+        color: $maincolor;
+        direction: ltr;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: underline;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        @media (max-width:1199px) {
+            padding: 0 20px;
+            font-size: 15px;
+        }
+    }
+}
+
+html[dir="ltr"] .car-prices-table {
+    .car-prices-table-name {
+        width: 462px;
+    }
+
+    .car-prices-table-price {
+        width: 157px;
+    }
+
+    .car-prices-table-seller {
+        width: 220px;
+        min-width: 220px;
+    }
+
+    .car-prices-table-price {
+        border-right: 2px solid #f5f5f5;
+        border-left: 2px solid #f5f5f5;
     }
 }
