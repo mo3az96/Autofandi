@@ -115,11 +115,11 @@ html[dir="ltr"] .search-cats {
         margin-left: 2px;
 
         @media (max-width:1199px) {
-            width: 243px;
+            width: 231px;
         }
 
-        @media (max-width:991px) {
-            width: 178.5px;
+        @media (max-width: 991px) {
+            width: 238.5px;
         }
 
         @media (max-width:767px) {
@@ -187,5 +187,34 @@ html[dir="ltr"] .search-cats {
                 color: #fff;
             }
         }
+    }
+}
+
+html[dir="ltr"] .review-post {
+
+    li {
+        margin-right: 2px;
+        margin-left: 0;
+
+        @media (max-width:1199px) {
+            width: 231px;
+        }
+
+        @media (max-width: 991px) {
+            width: 238.5px;
+        }
+
+        @media (max-width:767px) {
+            width: 100%;
+            margin-left: 0;
+            margin-bottom: 5px;
+            margin-right: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
     }
 }

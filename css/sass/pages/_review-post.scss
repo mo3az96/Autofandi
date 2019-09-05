@@ -9,6 +9,12 @@
     }
 }
 
+.review-post {
+    @media (max-width:991px) {
+        margin-bottom: 50px;
+    }
+}
+
 .car-review-share {
     background-color: transparent;
     width: auto;
@@ -148,6 +154,11 @@ html[dir=ltr] .car-review-share {
     margin-top: 67px;
     margin-bottom: 4px;
 
+    @media (max-width:767px) {
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+
     .car-prices-table-seller-name {
         font-size: 16px;
         color: $seccolor;
@@ -265,4 +276,156 @@ html[dir=ltr] .car-review-share {
         width: 59px;
         height: 59px;
     }
+}
+
+.record {
+    @extend %fixall;
+    background-color: #4caf52;
+    width: 241px;
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 66px;
+    position: relative;
+    margin-bottom: 26px;
+    margin-right: auto;
+
+    span {
+        font-size: 17px;
+        color: #fff;
+        display: block;
+
+        &.head {
+            font-family: Frutiger-bold;
+        }
+    }
+
+    &:hover {
+        .record-icon {
+            &:after {
+                border: 6px solid #64c26a;
+                animation: pulse2 2s linear infinite 1s;
+            }
+
+            &:before {
+                border: 6px solid #64c26a;
+                animation: pulse2 2s linear infinite;
+            }
+        }
+    }
+
+    @media (max-width:1199px) {
+        width: 100%;
+        padding-right: 55px;
+    }
+
+    @media (max-width:991px) {
+        width: 241px;
+        padding-right: 66px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+    }
+
+}
+
+.Ellipse-cont {
+    border-radius: 50%;
+    background-color: #64c26a;
+    position: absolute;
+    width: 73px;
+    height: 73px;
+    right: 0;
+    top: 50%;
+    transform: translate(30%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.record-icon {
+    border-radius: 50%;
+    background-color: #4caf52;
+    width: 60px;
+    height: 60px;
+    font-size: 23.68px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 6px solid transparent;
+        border-radius: 100%;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 1px solid transparent;
+        border-radius: 100%;
+    }
+}
+
+html[dir="ltr"] .record {
+    padding-right: 0;
+    padding-left: 55px;
+    margin-right: 0;
+    margin-left: auto;
+
+    @media (max-width:1199px) {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 55px;
+    }
+
+    @media (max-width:991px) {
+        width: 241px;
+        padding-right: 0px;
+        padding-left: 55px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+    }
+
+    span {
+        font-size: 14px;
+
+        @media (max-width:1199px) {
+            font-size: 13px;
+        }
+
+        @media (max-width:991px) {
+            font-size: 14px;
+        }
+
+        &.head {
+            font-size: 16px;
+
+            @media (max-width:1199px) {
+                font-size: 14px;
+            }
+
+            @media (max-width:991px) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+html[dir="ltr"] .Ellipse-cont {
+    right: auto;
+    left: 0;
+    transform: translate(-30%, -50%);
 }
