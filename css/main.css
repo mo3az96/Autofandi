@@ -962,7 +962,7 @@ html[dir=ltr] .advanced-search {
 }
 @media (max-width: 767px) {
   html[dir=ltr] .advanced-search {
-    margin-top: 0;
+    margin-top: 50px;
   }
 }
 @media (max-width: 991px) {
