@@ -88,7 +88,7 @@ $(document).ready(function () {
             margin: 15,
             autoplay: false,
             autoplayTimeout: 2500,
-            rtl: true,
+            rtl: document.dir == 'rtl' ? true : false,
             loop: true,
             nav: false,
             dots: true,
@@ -120,7 +120,7 @@ $(document).ready(function () {
             margin: 15,
             autoplay: false,
             autoplayTimeout: 2500,
-            rtl: true,
+            rtl: document.dir == 'rtl' ? true : false,
             loop: true,
             nav: false,
             dots: true,
@@ -152,7 +152,7 @@ $(document).ready(function () {
             margin: 15,
             autoplay: false,
             autoplayTimeout: 2500,
-            rtl: true,
+            rtl: document.dir == 'rtl' ? true : false,
             loop: true,
             nav: false,
             dots: true,
@@ -184,7 +184,7 @@ $(document).ready(function () {
             margin: 15,
             autoplay: false,
             autoplayTimeout: 2500,
-            rtl: true,
+            rtl: document.dir == 'rtl' ? true : false,
             loop: true,
             nav: false,
             dots: true,
@@ -238,11 +238,12 @@ $(document).ready(function () {
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
-        loop: false
+        loop: ($(window).width() < 992) ? true : false,
 
     });
     var galleryTop = new Swiper('.gallery-top', {
         spaceBetween: 10,
+        loop: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
