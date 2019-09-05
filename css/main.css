@@ -2692,11 +2692,6 @@ html[dir=ltr] .car-prices .price {
 }
 
 html[dir=ltr] .brand-img {
-  display: flex;
-  width: 83px;
-  height: 83px;
-  align-items: center;
-  justify-content: center;
   margin-left: 0;
   margin-right: 4px;
   margin-bottom: 5px;
@@ -3662,6 +3657,13 @@ html[dir=ltr] .car-review-share .socila-link {
   color: #ed2228;
 }
 
+html[dir=ltr] .similar-reviews .tags {
+  justify-content: flex-end;
+}
+html[dir=ltr] .similar-reviews .info {
+  text-align: left;
+}
+
 .car-review-table {
   border-top: 2px solid #f5f5f5;
   margin-top: 67px;
@@ -3918,6 +3920,24 @@ html[dir=ltr] .Ellipse-cont {
   right: auto;
   left: 0;
   transform: translate(-30%, -50%);
+}
+
+.brand-img-page {
+  width: 150px;
+  margin: auto;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.brands-page {
+  display: block;
+  height: auto;
+  overflow: visible;
+  max-height: none;
 }
 
 .footer-sec {

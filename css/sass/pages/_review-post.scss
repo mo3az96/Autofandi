@@ -149,6 +149,16 @@ html[dir=ltr] .car-review-share {
     }
 }
 
+html[dir="ltr"] .similar-reviews {
+    .tags {
+        justify-content: flex-end;
+    }
+
+    .info {
+        text-align: left;
+    }
+}
+
 .car-review-table {
     border-top: 2px solid #f5f5f5;
     margin-top: 67px;
