@@ -3156,6 +3156,11 @@ html[dir=ltr] .video-title {
 .car-price-header .car-price-info .car-name {
   margin-left: 15px;
 }
+@media (max-width: 480px) {
+  .car-price-header .car-price-info .car-name {
+    margin-bottom: 0;
+  }
+}
 .car-price-header .car-status {
   display: flex;
   align-items: center;
@@ -3206,6 +3211,11 @@ html[dir=ltr] .video-title {
   position: relative;
   font-size: 16px;
   margin: 0;
+}
+@media (max-width: 480px) {
+  .car-price-header .price {
+    margin-top: 15px;
+  }
 }
 
 html[dir=ltr] .car-price-header .car-price-info .car-name {
