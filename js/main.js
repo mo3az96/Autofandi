@@ -10,9 +10,7 @@ window.onload = function () {
 
 }
 $(document).ready(function () {
-    $('.selectpicker').selectpicker({
-        dropupAuto: false,
-    });
+    $('.selectpicker').selectpicker({});
     $(window).scroll(function () {
         if ($(this).scrollTop() >= 30) {
             $('.Sec-bar').addClass("fixed-top");
