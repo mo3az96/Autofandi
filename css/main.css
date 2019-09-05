@@ -1416,6 +1416,10 @@ html[dir=ltr] .checkmark {
   }
 }
 
+.dropdown-backdrop {
+  display: none;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
