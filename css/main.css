@@ -2635,10 +2635,10 @@ html[dir=ltr] .car-prices .price {
   align-items: center;
   flex-wrap: wrap;
   max-height: 355px;
-  overflow: hidden;
 }
 @media (max-width: 1199px) {
   .brands {
+    overflow: hidden;
     justify-content: space-around;
   }
 }

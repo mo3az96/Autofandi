@@ -387,9 +387,10 @@ html[dir="ltr"] .car-prices {
     align-items: center;
     flex-wrap: wrap;
     max-height: 355px;
-    overflow: hidden;
+
 
     @media (max-width: 1199px) {
+        overflow: hidden;
         justify-content: space-around;
     }
 
