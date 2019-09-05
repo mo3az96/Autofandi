@@ -3932,6 +3932,43 @@ html[dir=ltr] .Ellipse-cont {
   margin-left: 0;
   margin-right: 0;
 }
+@media (max-width: 1199px) {
+  .brand-img-page {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .brand-img-page:nth-of-type(3n) {
+    margin-left: 0px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 991px) {
+  .brand-img-page {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+}
+
+html[dir=ltr] .brand-img-page {
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (max-width: 1199px) {
+  html[dir=ltr] .brand-img-page {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  html[dir=ltr] .brand-img-page:nth-of-type(3n) {
+    margin-left: 0px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 991px) {
+  html[dir=ltr] .brand-img-page {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+}
 
 .brands-page {
   display: block;

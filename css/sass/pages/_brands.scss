@@ -8,6 +8,40 @@
     margin-left: 0;
     margin-right: 0;
 
+    @media (max-width:1199px) {
+        margin-left: 0;
+        margin-right: 0;
+
+        &:nth-of-type(3n) {
+            margin-left: 0px;
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width: 991px) {
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+}
+
+html[dir="ltr"] .brand-img-page {
+    margin-left: 0;
+    margin-right: 0;
+
+    @media (max-width:1199px) {
+        margin-left: 0;
+        margin-right: 0;
+
+        &:nth-of-type(3n) {
+            margin-left: 0px;
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width: 991px) {
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
 }
 
 .brands-page {
