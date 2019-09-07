@@ -204,20 +204,20 @@ html[dir="ltr"] .similar-reviews {
     position: relative;
     cursor: pointer;
 
-    &:hover {
+    // &:hover {
 
-        .play-video {
-            &:after {
-                border: 15px solid #fff;
-                animation: pulse 2s linear infinite 1s;
-            }
+    //     .play-video {
+    //         &:after {
+    //             border: 15px solid #fff;
+    //             animation: pulse 2s linear infinite 1s;
+    //         }
 
-            &:before {
-                border: 15px solid #fff;
-                animation: pulse 2s linear infinite;
-            }
-        }
-    }
+    //         &:before {
+    //             border: 15px solid #fff;
+    //             animation: pulse 2s linear infinite;
+    //         }
+    //     }
+    // }
 
     .overlay {
         position: absolute;
@@ -242,7 +242,8 @@ html[dir="ltr"] .similar-reviews {
             left: 0;
             width: 100%;
             height: 100%;
-            border: 15px solid transparent;
+            border: 15px solid #fff;
+            animation: pulse 2s linear infinite 1s;
             border-radius: 100%;
         }
 
@@ -253,7 +254,8 @@ html[dir="ltr"] .similar-reviews {
             left: 0;
             width: 100%;
             height: 100%;
-            border: 15px solid transparent;
+            border: 15px solid #fff;
+            animation: pulse 2s linear infinite;
             border-radius: 100%;
         }
     }
@@ -372,7 +374,8 @@ html[dir="ltr"] .similar-reviews {
         left: 0;
         width: 100%;
         height: 100%;
-        border: 6px solid transparent;
+        border: 6px solid #64c26a;
+        animation: pulse2 2s linear infinite 1s;
         border-radius: 100%;
     }
 
@@ -383,7 +386,8 @@ html[dir="ltr"] .similar-reviews {
         left: 0;
         width: 100%;
         height: 100%;
-        border: 1px solid transparent;
+        border: 6px solid #64c26a;
+        animation: pulse2 2s linear infinite;
         border-radius: 100%;
     }
 }

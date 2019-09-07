@@ -2,20 +2,20 @@
     @extend %fixall;
 
 
-    &:hover {
+    // &:hover {
 
-        .play-video {
-            &:after {
-                border: 15px solid #fff;
-                animation: pulse 2s linear infinite 1s;
-            }
+    //     .play-video {
+    //         &:after {
+    //             border: 15px solid #fff;
+    //             animation: pulse 2s linear infinite 1s;
+    //         }
 
-            &:before {
-                border: 15px solid #fff;
-                animation: pulse 2s linear infinite;
-            }
-        }
-    }
+    //         &:before {
+    //             border: 15px solid #fff;
+    //             animation: pulse 2s linear infinite;
+    //         }
+    //     }
+    // }
 }
 
 .video {
@@ -75,7 +75,8 @@ html[dir="ltr"] .video-title {
         left: 0;
         width: 100%;
         height: 100%;
-        border: 15px solid transparent;
+        border: 15px solid #fff;
+        animation: pulse 2s linear infinite 1s;
         border-radius: 100%;
     }
 
@@ -86,7 +87,8 @@ html[dir="ltr"] .video-title {
         left: 0;
         width: 100%;
         height: 100%;
-        border: 15px solid transparent;
+        border: 15px solid #fff;
+        animation: pulse 2s linear infinite;
         border-radius: 100%;
     }
 

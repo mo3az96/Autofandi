@@ -1610,6 +1610,7 @@ html[dir=ltr] .xs-nav .main-nav {
   background-color: #ed2228;
   background: #ed2228;
   opacity: 1;
+  margin: 0 3px;
 }
 
 .similar-reviews .owl-dots {
@@ -1637,6 +1638,7 @@ html[dir=ltr] .xs-nav .main-nav {
   background-color: #ed2228;
   background: #ed2228;
   opacity: 1;
+  margin: 0 3px;
 }
 
 .similar-news .owl-dots {
@@ -1664,6 +1666,7 @@ html[dir=ltr] .xs-nav .main-nav {
   background-color: #ed2228;
   background: #ed2228;
   opacity: 1;
+  margin: 0 3px;
 }
 
 .prices .owl-dots {
@@ -1691,6 +1694,7 @@ html[dir=ltr] .xs-nav .main-nav {
   background-color: #ed2228;
   background: #ed2228;
   opacity: 1;
+  margin: 0 3px;
 }
 
 .car-price-slider {
@@ -2085,7 +2089,6 @@ html[dir=ltr] .flex-fix {
   left: 0;
   top: 30px;
   width: 100%;
-  padding-top: 14px;
 }
 @media (max-width: 991px) {
   .Sec-bar {
@@ -2097,11 +2100,18 @@ html[dir=ltr] .flex-fix {
 .fixed-top {
   box-shadow: 0px 0px 10px 0px rgba(22, 22, 22, 0.1);
   top: 0;
+  padding-top: 10px;
 }
 @media (max-width: 991px) {
   .fixed-top {
     padding-top: 10px;
   }
+}
+.fixed-top .logo {
+  width: 15%;
+}
+.fixed-top .sec-bar {
+  margin-bottom: 10px;
 }
 
 .sec-bar {
@@ -3044,15 +3054,6 @@ html[dir=ltr] .price {
   padding-left: 11px;
 }
 
-.video-anchor:hover .play-video:after {
-  border: 15px solid #fff;
-  animation: pulse 2s linear infinite 1s;
-}
-.video-anchor:hover .play-video:before {
-  border: 15px solid #fff;
-  animation: pulse 2s linear infinite;
-}
-
 .video {
   margin-bottom: 28px;
 }
@@ -3108,7 +3109,8 @@ html[dir=ltr] .video-title {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 15px solid transparent;
+  border: 15px solid #fff;
+  animation: pulse 2s linear infinite 1s;
   border-radius: 100%;
 }
 .play-video:before {
@@ -3118,7 +3120,8 @@ html[dir=ltr] .video-title {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 15px solid transparent;
+  border: 15px solid #fff;
+  animation: pulse 2s linear infinite;
   border-radius: 100%;
 }
 
@@ -3720,14 +3723,6 @@ html[dir=ltr] .similar-reviews .info {
   position: relative;
   cursor: pointer;
 }
-.video-review:hover .play-video:after {
-  border: 15px solid #fff;
-  animation: pulse 2s linear infinite 1s;
-}
-.video-review:hover .play-video:before {
-  border: 15px solid #fff;
-  animation: pulse 2s linear infinite;
-}
 .video-review .overlay {
   position: absolute;
   width: 100%;
@@ -3750,7 +3745,8 @@ html[dir=ltr] .similar-reviews .info {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 15px solid transparent;
+  border: 15px solid #fff;
+  animation: pulse 2s linear infinite 1s;
   border-radius: 100%;
 }
 .video-review .play-video:before {
@@ -3760,7 +3756,8 @@ html[dir=ltr] .similar-reviews .info {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 15px solid transparent;
+  border: 15px solid #fff;
+  animation: pulse 2s linear infinite;
   border-radius: 100%;
 }
 
@@ -3866,7 +3863,8 @@ html[dir=ltr] .similar-reviews .info {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 6px solid transparent;
+  border: 6px solid #64c26a;
+  animation: pulse2 2s linear infinite 1s;
   border-radius: 100%;
 }
 .record-icon:before {
@@ -3876,7 +3874,8 @@ html[dir=ltr] .similar-reviews .info {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 1px solid transparent;
+  border: 6px solid #64c26a;
+  animation: pulse2 2s linear infinite;
   border-radius: 100%;
 }
 
